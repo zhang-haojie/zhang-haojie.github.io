@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeSAM</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+-->
+    <section>
+        <div class="jumbotron text-center mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>
+                            Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation
+                        </h1>    
+                        <h4 style="color:#5a6268;"> CVPR 2024 </h4>
+                        <hr>
+                        <h5>
+                            <a href="https://zhang-haojie.github.io/"
+                            target="_blank">Haojie Zhang<sup>1</sup>*</a>,
+                            <a href="https://yysu.site" 
+                            target="_blank">Yongyi Su<sup>1</sup>*</a>,
+                            <a href="https://alex-xun-xu.github.io/" 
+                            target="_blank">Xun Xu<sup>2</sup>&#10013</a>,
+                            <a href="https://kuijia.site" 
+                            target="_blank">Kui Jia<sup>3</sup></a>
+                        </h5>
+                        <p><sup>1</sup>South China University of Technology
+                            <sup>2</sup>Institute for Infocomm Research, A*STAR
+                            <br>
+                            <sup>3</sup>School of Data Science, The Chinese University of Hong Kong, Shenzhen</p>
+                        <p>
+                            <a class="btn btn-secondary btn-lg" href="http://arxiv.org/abs/2312.03502"
+                                role="button">Paper</a>
+                            <a class="btn btn-secondary btn-lg" href="https://github.com/zhang-haojie/wesam"
+                                role="button">Code</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Abstract</h2>
+                    <hr style="margin-top:0px">
+                    <!--			  <div><img class="img-fluid" src="images/teaser.jpg" alt=""></div>-->
+                    <img width="100%" src="asserts/wesam/teaser.webp" />
+                    <br><br>
+                    <p class="text-left">
+                        The success of large language models has inspired the computer vision community to explore image segmentation foundation model that is able to zero/few-shot generalize through prompt engineering. Segment-Anything~(SAM), among others, is the state-of-the-art image segmentation foundation model demonstrating strong zero/few-shot generalization. Despite the success, recent studies reveal the weakness of SAM under strong distribution shift. In particular, SAM performs awkwardly on corrupted natural images, camouflaged images, medical images, etc. Motivated by the observations, we aim to develop a self-training based strategy to adapt SAM to target distribution. Given the unique challenges of large source dataset, high computation cost and incorrect pseudo label, we propose a weakly supervised self-training architecture with anchor regularization and low-rank finetuning to improve the robustness and computation efficiency of adaptation. We validate the effectiveness on 5 types of downstream segmentation tasks including natural clean/corrupted images, medical images, camouflaged images and robotic images. Our proposed method is task-agnostic in nature and outperforms pre-trained SAM and state-of-the-art domain adaptation methods on almost all downstream tasks with the same testing prompt inputs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Contributions & Method</h2>
+                    <hr style="margin-top:0px">
+                    <!-- <p class="text-left">
+                        XXX.
+                    </p> -->
+                </div>
+            </div>
+            <ul>
+                <p class="text-left">
+                    We summarize the contributions of this work as follows:
+                </p>
+                <li>
+                    We are motivated by the  generalization issue of segment-anything~(SAM) model to diverse downstream segmentation tasks and propose a task-agnostic solution to adapt SAM through self-training with no access to source dataset.
+                </li>
+                <li>
+                    We exploit weak supervisions, including bounding box, point-wise annotation and coarse segmentation masks, to improve the effectiveness of adaptation. The weak supervision are fully compatible with the prompt encoder of SAM.
+                </li>
+                <li>
+                    Extensive experiments on 5 types of downstream instance segmentation tasks demonstrate the effectiveness of the proposed weakly supervised adaptation approach.
+                </li>
+            </ul>
+            <div class="row" style="margin-top:5px">
+                <div class="col-12 text-center">
+                    <img class="img-fluid" src="asserts/wesam/pipeline.webp" alt="">
+                    <p class="text-left">
+                        The proposed self-training architecture with anchor network regularization and contrastive loss regularization. Red arrows indicates the backpropagation flow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Quantitative Evaluations</h2>
+                    <hr style="margin-top:0px">
+                    <!-- <p class="text-left">
+                        We give an Example of the optimization process (Surface, F-score, and Dynamic Occupancy Grids)on
+                        the <a href="http://www.scan-net.org/" target="_blank">ScanNet dataset</a>.
+                    </p> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/corrupt.webp" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/natural.webp" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/medical.webp" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/cod.webp" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/indoor.webp" />
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Qualitative Evaluations</h2>
+                    <hr style="margin-top:0px">
+                    <!-- <p class="text-left">
+                        We give an Example of the optimization process (Surface, F-score, and Dynamic Occupancy Grids)on
+                        the <a href="http://www.scan-net.org/" target="_blank">ScanNet dataset</a>.
+                    </p> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/COCO_vis.webp" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/corrupt-1.webp" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/corrupt-2.webp" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/CAMO_vis.webp" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/ISIC_vis.webp" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img width="100%" src="asserts/wesam/OCID_vis.webp" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <footer class="text-center">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12">
+                    <h2>Citation</h2>
+                    <hr style="margin-top:0px">
+                    <div class="bibtexsection">
+                        <pre>
+<code>@article{zhang2023improving,
+    title={Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation}, 
+    author={Haojie Zhang and Yongyi Su and Xun Xu and Kui Jia},
+    journal={arXiv preprint arXiv:2312.03502},
+    year={2023}
+}</code>
+<!-- <code>Coming Soon!</code> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <br>
+    <br>
+    <footer class="text-center">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12">
+                    <h2>Acknowledgements</h2>
+                    <hr style="margin-top:0px">
+                    <div class="col-12 text-center">
+                        <p class="text-left">
+                            The website template was borrowed from <a href="https://lioryariv.github.io/idr/">Lior Yariv</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
