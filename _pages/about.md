@@ -22,6 +22,22 @@ I am currently a Master at [South China University of Techonology (SCUT)](https:
 I mainly focus on **Computer Vision**. My current research interests include Semantic Perception and Domain Adaptation. Recently, I am working on Domain Adaptation.
 
 
+# 📝 Publications
+
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">arXiv 2023</div><img src="images/wesam.webp" alt="sym" width="100%"></div></div>
+<div class="paper-box-text" markdown="1">
+
+[Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation](http://arxiv.org/abs/2312.03502)
+
+ **Haojie Zhang\***, Yongyi Su\*, Xun Xu✝, Kui Jia
+
+[**Project**](https://zhang-haojie.github.io/project-pages/wesam.html) | [**Code**](https://github.com/zhang-haojie/wesam)
+
+- We propose a task-agnostic solution to adapt the SAM model for diverse downstream segmentation tasks using self-training without access to the source dataset. By leveraging weak supervisions such as bounding boxes, point-wise annotations, and coarse segmentation masks, we enhance the adaptation effectiveness, as demonstrated through extensive experiments on 5 types of downstream instance segmentation tasks.
+</div>
+</div>
+
+
 # 📖 Educations
 - *2023.09 - Now*, Master, South China University of Technology, Guangzhou.
 - *2019.09 - 2023.06*, Undergraduate, South China University of Technology, Guangzhou.
