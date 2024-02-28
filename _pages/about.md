@@ -32,7 +32,6 @@ I mainly focus on **Computer Vision**. My current research interests include Sem
  **Haojie Zhang\***, Yongyi Su\*, Xun Xu✝, Kui Jia
 
 [**Project**](https://zhang-haojie.github.io/project-pages/wesam.html) | [**Code**](https://github.com/zhang-haojie/wesam)
-
 - We propose a task-agnostic solution to adapt the SAM model for diverse downstream segmentation tasks using self-training without access to the source dataset. By leveraging weak supervisions such as bounding boxes, point-wise annotations, and coarse segmentation masks, we enhance the adaptation effectiveness, as demonstrated through extensive experiments on 5 types of downstream instance segmentation tasks.
 </div>
 </div>
