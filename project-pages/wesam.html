@@ -166,49 +166,50 @@
             <div class="row">
                 <table style="width: 80%;">
                     <caption>Adaptation results on COCO-C dataset using bounding box prompt.</caption>
-                    <tr><td>Method</td><td>Brit</td><td>Contr</td><td>Defoc</td><td>Elast</td><td>Fog</td><td>Frost</td><td>Gauss</td><td>Glass</td><td>Impul</td><td>Jpeg</td><td>Motn</td><td>Pixel</td><td>Shot</td><td>Snow</td><td>Zoom</td><td>Avg</td></tr>
-                    <tr><td>Direct</td><td>72.83</td><td>57.34</td><td>64.47</td><td>69.36</td><td>72.39</td><td>70.50</td><td>67.20</td><td>64.43</td><td>67.65</td><td>68.23</td><td>62.72</td><td>68.60</td><td>67.44</td><td>69.02</td><td>58.80</td><td>66.73</td></tr>
-                    <tr><td>TENT</td><td>76.02</td><td>61.51</td><td><strong>67.48</strong></td><td>70.88</td><td>74.89</td><td>73.88</td><td>69.01</td><td>67.10</td><td>69.28</td><td>70.25</td><td>65.45</td><td>70.81</td><td>69.96</td><td>72.37</td><td>62.59</td><td>69.43</td></tr>
-                    <tr><td>SHOT</td><td>73.84</td><td>59.09</td><td>65.91</td><td>69.57</td><td>73.98</td><td>72.51</td><td>68.30</td><td>66.09</td><td>68.61</td><td>69.45</td><td>64.56</td><td>70.48</td><td>68.77</td><td>71.03</td><td>60.17</td><td>68.16</td></tr>
-                    <tr><td>Soft Teacher</td><td>73.90</td><td><strong>62.12</strong></td><td>65.41</td><td>71.32</td><td>72.16</td><td>73.27</td><td>68.84</td><td>67.49</td><td>68.73</td><td>70.18</td><td><strong>66.88</strong></td><td>69.79</td><td>70.08</td><td>73.33</td><td>64.88</td><td>69.23</td></tr>
-                    <tr><td>TRIBE</td><td>76.40</td><td>60.86</td><td>66.19</td><td>72.72</td><td>75.08</td><td>75.14</td><td>70.34</td><td>66.66</td><td>70.83</td><td>72.42</td><td>65.94</td><td>70.24</td><td><strong>70.66</strong></td><td>74.22</td><td>64.56</td><td>70.15</td></tr>
-                    <tr><td>DePT</td><td>69.15</td><td>57.26</td><td>59.08</td><td>66.80</td><td>58.73</td><td>66.75</td><td>66.78</td><td>62.74</td><td>65.65</td><td>66.39</td><td>61.66</td><td>66.65</td><td>67.57</td><td>66.62</td><td>58.21</td><td>64.42</td></tr>
-                    <tr><td>WDASS</td><td>76.21</td><td>60.57</td><td>67.07</td><td>72.34</td><td>75.97</td><td>74.63</td><td>69.84</td><td>67.88</td><td>69.92</td><td>71.36</td><td>66.25</td><td><strong>71.99</strong></td><td>70.32</td><td>72.25</td><td>63.61</td><td>70.01</td></tr>
-                    <tr><td>OURS</td><td><strong>78.50</strong></td><td>61.05</td><td>66.99</td><td><strong>73.93</strong></td><td><strong>77.09</strong></td><td><strong>76.10</strong></td><td><strong>72.02</strong></td><td><strong>68.21</strong></td><td><strong>71.29</strong></td><td><strong>72.77</strong></td><td>66.33</td><td>70.90</td><td>70.28</td><td><strong>75.07</strong></td><td><strong>65.33</strong></td><td><strong>71.05</strong></td></tr>
-                    <tr><td>Supervised</td><td>78.86</td><td>74.81</td><td>72.04</td><td>74.32</td><td>78.01</td><td>77.14</td><td>73.43</td><td>72.12</td><td>74.08</td><td>75.30</td><td>71.39</td><td>75.15</td><td>74.25</td><td>76.34</td><td>68.04</td><td>74.35</td></tr>                    
+                    <tr><th>Method</th><th>Brit</th><th>Contr</th><th>Defoc</th><th>Elast</th><th>Fog</th><th>Frost</th><th>Gauss</th><th>Glass</th><th>Impul</th><th>Jpeg</th><th>Motn</th><th>Pixel</th><th>Shot</th><th>Snow</th><th>Zoom</th><th>Avg</th></tr>
+                    <tr><th>Direct</th><td>72.83</td><td>57.34</td><td>64.47</td><td>69.36</td><td>72.39</td><td>70.50</td><td>67.20</td><td>64.43</td><td>67.65</td><td>68.23</td><td>62.72</td><td>68.60</td><td>67.44</td><td>69.02</td><td>58.80</td><td>66.73</td></tr>
+                    <tr><th>TENT</th><td>76.02</td><td>61.51</td><td><strong>67.48</strong></td><td>70.88</td><td>74.89</td><td>73.88</td><td>69.01</td><td>67.10</td><td>69.28</td><td>70.25</td><td>65.45</td><td>70.81</td><td>69.96</td><td>72.37</td><td>62.59</td><td>69.43</td></tr>
+                    <tr><th>SHOT</th><td>73.84</td><td>59.09</td><td>65.91</td><td>69.57</td><td>73.98</td><td>72.51</td><td>68.30</td><td>66.09</td><td>68.61</td><td>69.45</td><td>64.56</td><td>70.48</td><td>68.77</td><td>71.03</td><td>60.17</td><td>68.16</td></tr>
+                    <tr><th>Soft Teacher</th><td>73.90</td><td><strong>62.12</strong></td><td>65.41</td><td>71.32</td><td>72.16</td><td>73.27</td><td>68.84</td><td>67.49</td><td>68.73</td><td>70.18</td><td><strong>66.88</strong></td><td>69.79</td><td>70.08</td><td>73.33</td><td>64.88</td><td>69.23</td></tr>
+                    <tr><th>TRIBE</th><td>76.40</td><td>60.86</td><td>66.19</td><td>72.72</td><td>75.08</td><td>75.14</td><td>70.34</td><td>66.66</td><td>70.83</td><td>72.42</td><td>65.94</td><td>70.24</td><td><strong>70.66</strong></td><td>74.22</td><td>64.56</td><td>70.15</td></tr>
+                    <tr><th>DePT</th><td>69.15</td><td>57.26</td><td>59.08</td><td>66.80</td><td>58.73</td><td>66.75</td><td>66.78</td><td>62.74</td><td>65.65</td><td>66.39</td><td>61.66</td><td>66.65</td><td>67.57</td><td>66.62</td><td>58.21</td><td>64.42</td></tr>
+                    <tr><th>WDASS</th><td>76.21</td><td>60.57</td><td>67.07</td><td>72.34</td><td>75.97</td><td>74.63</td><td>69.84</td><td>67.88</td><td>69.92</td><td>71.36</td><td>66.25</td><td><strong>71.99</strong></td><td>70.32</td><td>72.25</td><td>63.61</td><td>70.01</td></tr>
+                    <tr><th>OURS</th><td><strong>78.50</strong></td><td>61.05</td><td>66.99</td><td><strong>73.93</strong></td><td><strong>77.09</strong></td><td><strong>76.10</strong></td><td><strong>72.02</strong></td><td><strong>68.21</strong></td><td><strong>71.29</strong></td><td><strong>72.77</strong></td><td>66.33</td><td>70.90</td><td>70.28</td><td><strong>75.07</strong></td><td><strong>65.33</strong></td><td><strong>71.05</strong></td></tr>
+                    <tr><th>Supervised</th><td>78.86</td><td>74.81</td><td>72.04</td><td>74.32</td><td>78.01</td><td>77.14</td><td>73.43</td><td>72.12</td><td>74.08</td><td>75.30</td><td>71.39</td><td>75.15</td><td>74.25</td><td>76.34</td><td>68.04</td><td>74.35</td></tr>                    
                 </table>
             </div>
             <br>
             <div class="row">
                 <table style="width: 60%;">
                     <caption>Adaptation results on natural clean image datasets.</caption>
-                    <tr><th>Method</th><th colspan="3">COCO 2017</th><th colspan="3">Pascal VOC</th></tr>
-                    <tr><th></th><th>box</th><th>point</th><th>poly</th><th>box</th><th>point</th><th>poly</th></tr>
-                    <tr><td>TENT</td><td>78.21</td><td>52.99</td><td>71.51</td><td>80.24</td><td>74.97</td><td>65.03</td></tr>
-                    <tr><td>SHOT</td><td>75.18</td><td>58.46</td><td>69.26</td><td>79.80</td><td>74.26</td><td>63.38</td></tr>
-                    <tr><td>Soft Teacher</td><td>75.94</td><td>43.36</td><td>68.27</td><td>72.93</td><td>56.09</td><td>62.20</td></tr>
-                    <tr><td>TRIBE</td><td>77.56</td><td>49.56</td><td>70.99</td><td>78.87</td><td>69.21</td><td>65.39</td></tr>
-                    <tr><td>DePT</td><td>71.00</td><td>37.35</td><td>63.27</td><td>74.09</td><td>42.99</td><td>59.94</td></tr>
-                    <tr><td>WDASS</td><td>77.29</td><td>60.55</td><td>70.19</td><td>80.12</td><td><strong>76.15</strong></td><td><strong>66.98</strong></td></tr>
-                    <tr><td>OURS</td><td><strong>80.12</strong></td><td><strong>62.09</strong></td><td><strong>72.33</strong></td><td><strong>80.27</strong></td><td>74.15</td><td><strong>66.72</strong></td></tr>
-                    <tr><td>Supervised</td><td>81.50</td><td>69.77</td><td>73.39</td><td>81.23</td><td>76.98</td><td>71.32</td></tr>
+                    <tr><th rowspan="2">Method</th><th colspan="3">COCO 2017</th><th colspan="3">Pascal VOC</th></tr>
+                    <tr><th>box</th><th>point</th><th>poly</th><th>box</th><th>point</th><th>poly</th></tr>
+                    <tr><th>Direct</th><td>74.29</td><td>55.06</td><td>65.64</td><td>69.21</td><td>69.21</td><td>60.79</td></tr>
+                    <tr><th>TENT</th><td>78.21</td><td>52.99</td><td>71.51</td><td>80.24</td><td>74.97</td><td>65.03</td></tr>
+                    <tr><th>SHOT</th><td>75.18</td><td>58.46</td><td>69.26</td><td>79.80</td><td>74.26</td><td>63.38</td></tr>
+                    <tr><th>Soft Teacher</th><td>75.94</td><td>43.36</td><td>68.27</td><td>72.93</td><td>56.09</td><td>62.20</td></tr>
+                    <tr><th>TRIBE</th><td>77.56</td><td>49.56</td><td>70.99</td><td>78.87</td><td>69.21</td><td>65.39</td></tr>
+                    <tr><th>DePT</th><td>71.00</td><td>37.35</td><td>63.27</td><td>74.09</td><td>42.99</td><td>59.94</td></tr>
+                    <tr><th>WDASS</th><td>77.29</td><td>60.55</td><td>70.19</td><td>80.12</td><td><strong>76.15</strong></td><td><strong>66.98</strong></td></tr>
+                    <tr><th>OURS</th><td><strong>80.12</strong></td><td><strong>62.09</strong></td><td><strong>72.33</strong></td><td><strong>80.27</strong></td><td>74.15</td><td><strong>66.72</strong></td></tr>
+                    <tr><th>Supervised</th><td>81.50</td><td>69.77</td><td>73.39</td><td>81.23</td><td>76.98</td><td>71.32</td></tr>
                 </table>
             </div>
             <br>
             <div class="row">
                 <table style="width: 60%;">
                     <caption>Adaptation results on medical image segmentation datasets.</caption>
-                    <tr><th>Method</th><th colspan="3">kvasir-SEG</th><th colspan="3">ISIC</th></tr>
-                    <tr><th></th><th>box</th><th>point</th><th>poly</th><th>box</th><th>point</th><th>poly</th></tr>
-                    <tr><td>Direct</td><td>81.59</td><td>62.30</td><td>54.03</td><td>66.74</td><td>53.42</td><td>62.82</td></tr>
-                    <tr><td>TENT</td><td>82.47</td><td>61.84</td><td>62.97</td><td>71.76</td><td>53.46</td><td>67.12</td></tr>
-                    <tr><td>SHOT</td><td>82.30</td><td>63.76</td><td>61.34</td><td>71.99</td><td>55.99</td><td>66.86</td></tr>
-                    <tr><td>Soft Teacher</td><td>84.12</td><td>73.53</td><td>58.15</td><td>75.74</td><td>54.95</td><td>72.29</td></tr>
-                    <tr><td>TRIBE</td><td>85.05</td><td>73.03</td><td>64.61</td><td>72.61</td><td>50.36</td><td>67.99</td></tr>
-                    <tr><td>DePT</td><td>81.91</td><td>52.06</td><td>61.55</td><td>78.43</td><td>46.79</td><td>72.75</td></tr>
-                    <tr><td>WDASS</td><td>84.01</td><td>63.78</td><td>64.78</td><td>74.23</td><td>55.63</td><td>67.84</td></tr>
-                    <tr><td>OURS</td><td><strong>85.47</strong></td><td><strong>75.23</strong></td><td><strong>67.40</strong></td><td><strong>80.01</strong></td><td><strong>62.12</strong></td><td><strong>75.36</strong></td></tr>
-                    <tr><td>Supervised</td><td>85.89</td><td>77.54</td><td>81.64</td><td>81.62</td><td>79.81</td><td>80.26</td></tr>                    
+                    <tr><th rowspan="2">Method</th><th colspan="3">kvasir-SEG</th><th colspan="3">ISIC</th></tr>
+                    <tr><th>box</th><th>point</th><th>poly</th><th>box</th><th>point</th><th>poly</th></tr>
+                    <tr><th>Direct</th><td>81.59</td><td>62.30</td><td>54.03</td><td>66.74</td><td>53.42</td><td>62.82</td></tr>
+                    <tr><th>TENT</th><td>82.47</td><td>61.84</td><td>62.97</td><td>71.76</td><td>53.46</td><td>67.12</td></tr>
+                    <tr><th>SHOT</th><td>82.30</td><td>63.76</td><td>61.34</td><td>71.99</td><td>55.99</td><td>66.86</td></tr>
+                    <tr><th>Soft Teacher</th><td>84.12</td><td>73.53</td><td>58.15</td><td>75.74</td><td>54.95</td><td>72.29</td></tr>
+                    <tr><th>TRIBE</th><td>85.05</td><td>73.03</td><td>64.61</td><td>72.61</td><td>50.36</td><td>67.99</td></tr>
+                    <tr><th>DePT</th><td>81.91</td><td>52.06</td><td>61.55</td><td>78.43</td><td>46.79</td><td>72.75</td></tr>
+                    <tr><th>WDASS</th><td>84.01</td><td>63.78</td><td>64.78</td><td>74.23</td><td>55.63</td><td>67.84</td></tr>
+                    <tr><th>OURS</th><td><strong>85.47</strong></td><td><strong>75.23</strong></td><td><strong>67.40</strong></td><td><strong>80.01</strong></td><td><strong>62.12</strong></td><td><strong>75.36</strong></td></tr>
+                    <tr><th>Supervised</th><td>85.89</td><td>77.54</td><td>81.64</td><td>81.62</td><td>79.81</td><td>80.26</td></tr>                    
                 </table>
             </div>
             <br>
@@ -217,32 +218,32 @@
                     <caption>Adaptation results on camouflaged object datasets.</caption>
                     <tr><th rowspan="2">Method</th><th colspan="3">CHAMELEON</th><th colspan="3">CAMO</th><th colspan="3">COD10K</th></tr>
                     <tr><th>box</th><th>point</th><th>poly</th><th>box</th><th>point</th><th>poly</th><th>box</th><th>point</th><th>poly</th></tr>
-                    <tr><td>Direct</td><td>51.32</td><td>39.37</td><td>45.78</td><td>62.72</td><td>57.43</td><td>50.85</td><td>66.32</td><td>63.61</td><td>40.04</td></tr>
-                    <tr><td>TENT</td><td>65.48</td><td>54.53</td><td>53.06</td><td>71.24</td><td>59.59</td><td>60.29</td><td>69.36</td><td>61.94</td><td>43.36</td></tr>
-                    <tr><td>SHOT</td><td>68.60</td><td>62.47</td><td>54.36</td><td>71.61</td><td>62.78</td><td>58.72</td><td>69.09</td><td>65.25</td><td>42.38</td></tr>
-                    <tr><td>Soft Teacher</td><td>65.92</td><td>44.17</td><td>46.72</td><td>62.30</td><td>48.64</td><td>51.26</td><td>66.32</td><td>50.04</td><td>32.27</td></tr>
-                    <tr><td>TRIBE</td><td>71.00</td><td>52.80</td><td>54.99</td><td>66.00</td><td>61.97</td><td>60.54</td><td>67.84</td><td>63.62</td><td>42.75</td></tr>
-                    <tr><td>DePT</td><td>54.48</td><td>33.46</td><td>42.47</td><td>55.44</td><td>33.07</td><td>48.63</td><td>59.32</td><td>34.06</td><td>35.51</td></tr>
-                    <tr><td>WDASS</td><td>71.91</td><td>62.40</td><td>56.80</td><td>71.25</td><td>63.39</td><td>62.29</td><td>71.42</td><td>65.61</td><td>43.93</td></tr>
-                    <tr><td>OURS</td><td><strong>75.94</strong></td><td><strong>74.00</strong></td><td><strong>66.83</strong></td><td><strong>73.42</strong></td><td><strong>65.55</strong></td><td><strong>62.90</strong></td><td><strong>71.93</strong></td><td><strong>70.55</strong></td><td><strong>45.87</strong></td></tr>
-                    <tr><td>Supervised</td><td>78.05</td><td>85.86</td><td>68.38</td><td>79.17</td><td>77.01</td><td>67.12</td><td>78.06</td><td>78.44</td><td>64.90</td></tr>
+                    <tr><th>Direct</th><td>51.32</td><td>39.37</td><td>45.78</td><td>62.72</td><td>57.43</td><td>50.85</td><td>66.32</td><td>63.61</td><td>40.04</td></tr>
+                    <tr><th>TENT</th><td>65.48</td><td>54.53</td><td>53.06</td><td>71.24</td><td>59.59</td><td>60.29</td><td>69.36</td><td>61.94</td><td>43.36</td></tr>
+                    <tr><th>SHOT</th><td>68.60</td><td>62.47</td><td>54.36</td><td>71.61</td><td>62.78</td><td>58.72</td><td>69.09</td><td>65.25</td><td>42.38</td></tr>
+                    <tr><th>Soft Teacher</th><td>65.92</td><td>44.17</td><td>46.72</td><td>62.30</td><td>48.64</td><td>51.26</td><td>66.32</td><td>50.04</td><td>32.27</td></tr>
+                    <tr><th>TRIBE</th><td>71.00</td><td>52.80</td><td>54.99</td><td>66.00</td><td>61.97</td><td>60.54</td><td>67.84</td><td>63.62</td><td>42.75</td></tr>
+                    <tr><th>DePT</th><td>54.48</td><td>33.46</td><td>42.47</td><td>55.44</td><td>33.07</td><td>48.63</td><td>59.32</td><td>34.06</td><td>35.51</td></tr>
+                    <tr><th>WDASS</th><td>71.91</td><td>62.40</td><td>56.80</td><td>71.25</td><td>63.39</td><td>62.29</td><td>71.42</td><td>65.61</td><td>43.93</td></tr>
+                    <tr><th>OURS</th><td><strong>75.94</strong></td><td><strong>74.00</strong></td><td><strong>66.83</strong></td><td><strong>73.42</strong></td><td><strong>65.55</strong></td><td><strong>62.90</strong></td><td><strong>71.93</strong></td><td><strong>70.55</strong></td><td><strong>45.87</strong></td></tr>
+                    <tr><th>Supervised</th><td>78.05</td><td>85.86</td><td>68.38</td><td>79.17</td><td>77.01</td><td>67.12</td><td>78.06</td><td>78.44</td><td>64.90</td></tr>
                 </table>
             </div>
             <br>
             <div class="row">
                 <table style="width: 60%;">
                     <caption>Adaptation results on robotic image datasets.</caption>
-                    <tr><th>Method</th><th colspan="3">OCID</th><th colspan="3">OSD</th></tr>
-                    <tr><th></th><th>box</th><th>point</th><th>poly</th><th>box</th><th>point</th><th>poly</th></tr>
-                    <tr><td>Direct</td><td>86.35</td><td>71.41</td><td>72.81</td><td>87.62</td><td>78.86</td><td>80.77</td></tr>
-                    <tr><td>TENT</td><td>87.77</td><td>66.61</td><td><strong>77.53</strong></td><td>88.10</td><td>80.53</td><td>87.85</td></tr>
-                    <tr><td>SHOT</td><td>88.06</td><td>74.39</td><td>76.25</td><td>88.09</td><td>80.52</td><td>87.86</td></tr>
-                    <tr><td>Soft Teacher</td><td>84.98</td><td>68.46</td><td>73.75</td><td>90.41</td><td>80.49</td><td>87.00</td></tr>
-                    <tr><td>TRIBE</td><td>86.77</td><td>67.86</td><td>76.50</td><td>90.42</td><td><strong>80.54</strong></td><td>87.84</td></tr>
-                    <tr><td>DePT</td><td>82.00</td><td>56.52</td><td>70.92</td><td>81.84</td><td>69.06</td><td>82.50</td></tr>
-                    <tr><td>WDASS</td><td>87.68</td><td>77.13</td><td>76.70</td><td>88.07</td><td>80.52</td><td>88.19</td></tr>
-                    <tr><td>OURS</td><td><strong>88.09</strong></td><td><strong>80.14</strong></td><td>77.41</td><td><strong>92.11</strong></td><td>80.51</td><td><strong>89.72</strong></td></tr>
-                    <tr><td>Supervised</td><td>91.24</td><td>89.22</td><td>79.23</td><td>92.14</td><td>82.41</td><td>90.83</td></tr>
+                    <tr><th rowspan="2">Method</th><th colspan="3">OCID</th><th colspan="3">OSD</th></tr>
+                    <tr><th>box</th><th>point</th><th>poly</th><th>box</th><th>point</th><th>poly</th></tr>
+                    <tr><th>Direct</th><td>86.35</td><td>71.41</td><td>72.81</td><td>87.62</td><td>78.86</td><td>80.77</td></tr>
+                    <tr><th>TENT</th><td>87.77</td><td>66.61</td><td><strong>77.53</strong></td><td>88.10</td><td>80.53</td><td>87.85</td></tr>
+                    <tr><th>SHOT</th><td>88.06</td><td>74.39</td><td>76.25</td><td>88.09</td><td>80.52</td><td>87.86</td></tr>
+                    <tr><th>Soft Teacher</th><td>84.98</td><td>68.46</td><td>73.75</td><td>90.41</td><td>80.49</td><td>87.00</td></tr>
+                    <tr><th>TRIBE</th><td>86.77</td><td>67.86</td><td>76.50</td><td>90.42</td><td><strong>80.54</strong></td><td>87.84</td></tr>
+                    <tr><th>DePT</th><td>82.00</td><td>56.52</td><td>70.92</td><td>81.84</td><td>69.06</td><td>82.50</td></tr>
+                    <tr><th>WDASS</th><td>87.68</td><td>77.13</td><td>76.70</td><td>88.07</td><td>80.52</td><td>88.19</td></tr>
+                    <tr><th>OURS</th><td><strong>88.09</strong></td><td><strong>80.14</strong></td><td>77.41</td><td><strong>92.11</strong></td><td>80.51</td><td><strong>89.72</strong></td></tr>
+                    <tr><th>Supervised</th><td>91.24</td><td>89.22</td><td>79.23</td><td>92.14</td><td>82.41</td><td>90.83</td></tr>
                 </table>
             </div>
             <br>
