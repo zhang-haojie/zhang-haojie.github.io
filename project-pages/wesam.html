@@ -8,38 +8,6 @@
     <title>WeSAM</title>
 </head>
 
-<script>
-    window.onload = e => {
-        let new_val = document.body.clientWidth;
-        if (new_val < 800){
-            new_val = new_val / 0.6;
-        } else if (new_val > 1240){
-            new_val = 1240;
-        }
-
-        const smallFont = new_val * 0.015 + 'px';
-        const largeFont = new_val * 0.02 + 'px';
-
-        const main_div = document.getElementsByClassName('main')[0];
-        main_div.style='--smallFont: ' + smallFont + '; --largeFont: ' + largeFont;
-    };
-
-    addEventListener("resize", e => {
-        let new_val = document.body.clientWidth;
-        if (new_val < 800){
-            new_val = new_val / 0.6;
-        } else if (new_val > 1240){
-            new_val = 1240;
-        }
-
-        const smallFont = new_val * 0.015 + 'px';
-        const largeFont = new_val * 0.02 + 'px';
-
-        const main_div = document.getElementsByClassName('main')[0];
-        main_div.style='--smallFont: ' + smallFont + '; --largeFont: ' + largeFont;
-    });
-
-</script>
 
 <style>
     * {
@@ -434,5 +402,39 @@
 
         </div>
     </div>
-  </body>
+</body>
+
+
+<script>
+    addEventListener("load", e => {
+        let new_val = document.body.clientWidth;
+        if (new_val < 800){
+            new_val = new_val / 0.6;
+        } else if (new_val > 1240){
+            new_val = 1240;
+        }
+
+        const smallFont = new_val * 0.015 + 'px';
+        const largeFont = new_val * 0.02 + 'px';
+
+        const main_div = document.getElementsByClassName('main')[0];
+        main_div.style='--smallFont: ' + smallFont + '; --largeFont: ' + largeFont;
+    })
+
+    addEventListener("resize", e => {
+        let new_val = document.body.clientWidth;
+        if (new_val < 800){
+            new_val = new_val / 0.6;
+        } else if (new_val > 1240){
+            new_val = 1240;
+        }
+
+        const smallFont = new_val * 0.015 + 'px';
+        const largeFont = new_val * 0.02 + 'px';
+
+        const main_div = document.getElementsByClassName('main')[0];
+        main_div.style='--smallFont: ' + smallFont + '; --largeFont: ' + largeFont;
+    });
+
+</script>
 </html>
