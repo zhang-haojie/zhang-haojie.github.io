@@ -29,7 +29,7 @@ I mainly focus on **Computer Vision**. My current research interests include Sem
 
 [Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation](http://arxiv.org/abs/2312.03502)
 
- **Haojie Zhang\***, Yongyi Su\*, Xun Xu<sup>✝</sup>, Kui Jia
+ **Haojie Zhang\***, Yongyi Su\*, Xun Xu<sup>+</sup>, Kui Jia
  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 
