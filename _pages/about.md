@@ -27,13 +27,13 @@ I mainly focus on **Computer Vision**. My current research interests include Sem
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">arXiv 2023</div><img src="images/wesam.webp" alt="sym" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
-[Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation](http://arxiv.org/abs/2312.03502)
+**Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation**
 
  **Haojie Zhang\***, Yongyi Su\*, Xun Xu<sup>+</sup>, Kui Jia
  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 
-[**Project**](https://zhang-haojie.github.io/project-pages/wesam.html) | [**Code**](https://github.com/zhang-haojie/wesam)
+[**Paper**](http://arxiv.org/abs/2312.03502) | [**Project**](https://zhang-haojie.github.io/project-pages/wesam.html) | [**Code**](https://github.com/zhang-haojie/wesam)
 
 - We propose a task-agnostic solution to adapt the SAM model for diverse downstream segmentation tasks using self-training without access to the source dataset. By leveraging weak supervisions such as bounding boxes, point-wise annotations, and coarse segmentation masks, we enhance the adaptation effectiveness, as demonstrated through extensive experiments on 5 types of downstream instance segmentation tasks.
 
@@ -43,13 +43,13 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">arXiv 2023</div><img src="https://github.com/Huang-ZhangJin/huang-zhangjin.github.io/blob/main/images/sur2f.png" alt="sym" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
-[Sur<sup>2</sup>f: A Hybrid Representation for High-Quality and Efficient Surface Reconstruction from Multi-view Images](https://arxiv.org/abs/2401.03704)
+**Sur<sup>2</sup>f: A Hybrid Representation for High-Quality and Efficient Surface Reconstruction from Multi-view Images**
 
  Zhangjin Huang\*, Zhihao Liang\*, **Haojie Zhang**, Yangkai Lin, Kui Jia
 
 Preprint, 2024
 
-[**Project**](https://huang-zhangjin.github.io/project-pages/sur2f.html) | [**Code**](https://huang-zhangjin.github.io/project-pages/comming_soom.html)
+[**Paper**](https://arxiv.org/abs/2401.03704) | [**Project**](https://huang-zhangjin.github.io/project-pages/sur2f.html) | [**Code**](https://huang-zhangjin.github.io/project-pages/comming_soom.html)
 
 - We propose a new hybrid representation, termed Sur<sup>2</sup>f, that can enjoy the benefits of both explicit and implicit surface representations. This is achieved by learning two parallel streams of an implicit SDF and an explicit surrogate surface mesh, both of which, by rendering, receive supervision from multi-view image observations.
 
