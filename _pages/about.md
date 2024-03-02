@@ -40,7 +40,7 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">arXiv 2023</div><img src="https://github.com/Huang-ZhangJin/huang-zhangjin.github.io/blob/main/images/sur2f.png" alt="sym" width="100%"></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">arXiv 2023</div><img src="images/sur2f.png" alt="sym" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **Sur<sup>2</sup>f: A Hybrid Representation for High-Quality and Efficient Surface Reconstruction from Multi-view Images**
