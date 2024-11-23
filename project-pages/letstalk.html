@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LetsTalk</title>
+</head>
+
+
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    a {
+        color: hsl(200.02deg 95.59% 47.48%);
+        position: relative;
+        text-decoration: none;
+    }
+    
+    a:hover{
+        text-decoration: underline;
+    }
+
+    hr {
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        height: 1px;
+        margin: 0;
+    }
+
+    ul {
+        padding-inline-start: calc(var(--smallFont) * 2);
+    }
+
+    table {
+        border-collapse: collapse;
+        margin-right: auto;
+        border: 2px solid black;
+        font-size: calc(var(--smallFont) * 0.8);
+    }
+
+    th, td {
+        text-align: center;
+        border: 1px solid gray;
+        padding: calc(var(--smallFont) * 0.4);
+    }
+
+    .main {
+        width: 100vw;
+        min-height: 100vh;
+
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    .main_head {
+        background: #e9eeef;
+        width: 100%;
+        padding: calc(1.5 * var(--largeFont)) max(calc((100vw - 1240px) / 2), calc(1.5 * var(--largeFont)));
+    }
+
+    .main_head .title {
+        line-height: 1.2;
+        font-size: calc(var(--largeFont) * 1.5);
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .main_head .conference {
+        line-height: 1.2;
+        font-size: var(--largeFont);
+        text-align: center;
+        color: #5a6268;
+        font-weight: 500;
+        margin: var(--smallFont) 0;
+    }
+
+    .main_head .authors {
+        line-height: 1.2;
+        font-size: var(--smallFont);
+        text-align: center;
+        font-weight: 400;
+        margin: calc(var(--smallFont) * 0.8) 0;
+    }
+
+    .main_head .institute {
+        line-height: 1.2;
+        font-size: calc(var(--smallFont) * 0.8);
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .main_head .btns {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-top:  calc(var(--smallFont) * 0.8);
+    }
+
+    .main_head .btns .btn {
+        padding: 8px;
+        background: #6c757d;
+        font-size: calc(var(--largeFont) * 0.8);
+        color: #fff;
+        border-radius: 8px;
+        border: 1px solid gray;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+    .main_head .btns .btn:hover{
+        box-shadow: 0px 3px 3px lightgray;
+        transform: translateY(-2px);
+    }
+
+    .main_head .btns .btn span {
+        line-height: 100%;
+    }
+
+    .main_content {
+        width: 100%;
+        padding: 0 max(calc((100vw - 1100px) / 2), calc(1.5 * var(--largeFont)));
+        padding-bottom: 50px;
+    }
+
+    .main_content .section {
+        margin: var(--largeFont) 0;
+    }
+
+    .main_content .section .title {
+        text-align: center;
+        font-size: calc(var(--largeFont) * 1.2);
+        font-weight: 500;
+    }
+
+    .main_content .section hr {
+        margin: var(--smallFont) 0;
+    }
+
+    .main_content .section .content {
+        font-size: var(--smallFont);
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .main_content .section .content img {
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    .main_content .section .content .table {
+        overflow-x: auto;
+        max-width: 100%;
+    }
+
+
+    @media screen and (max-width: 799px){
+        .main_content .section .content img {
+            width: 100%;
+        }
+    }
+
+
+</style>
+
+<body>
+    <div class="main">
+        <div class="main_head">
+            <div class="title">
+                LetsTalk: Latent Diffusion Transformer for Talking Video Synthesis
+            </div>
+
+            <!-- <div class="conference">
+                CVPR 2024
+            </div> -->
+
+            <hr>
+
+            <div class="authors">
+                <a href="https://zhang-haojie.github.io/" target="_blank">Haojie Zhang<sup>1</sup>*</a>,&nbsp;&nbsp;
+                Zhihao Liang<sup>1</sup>*,&nbsp;&nbsp;
+                Ruibo Fu<sup>2</sup><sup>&dagger;</sup>,&nbsp;&nbsp;
+                Zhengqi Wen<sup>3</sup>,&nbsp;&nbsp;
+                Xuefei Liu<sup>2</sup>,
+                <br>
+                Chenxing Li<sup>4</sup>,&nbsp;&nbsp;
+                Jianhua Tao<sup>3,5</sup>,&nbsp;&nbsp;
+                Jianhua Tao<sup>3,5</sup>
+            </div>
+            <div class="institute">
+                <div>
+                    <sup>1</sup>South China University of Technology
+                    <!-- &nbsp;&nbsp; -->
+                    <br>
+                    <sup>2</sup>Institute of automation, Chinese Academy of Sciences
+                    <br>
+                    <sup>3</sup>Beijing National Research Center for Information Science and Technology, Tsinghua University
+                    <br>
+                    <sup>4</sup>AI Lab, Tencent
+                    &nbsp;&nbsp;
+                    <sup>5</sup>Department of Automation, Tsinghua University
+                </div>
+            </div>
+            
+            <div class="btns">
+                <div class="btn" onclick="(() => window.open(`http:\/\/arxiv.org\/abs\/2312.03502`))();">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000" style="width: calc(var(--largeFont))">
+                            <path d="M0 0h24v24H0z" fill="none"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" fill="#ffffff"/>
+                        </svg>
+                    </span>
+                    <span style="margin-left: 10px">Paper</span>
+                </div>
+
+                <div class="btn" onclick="(() => window.open(`https:\/\/github.com\/zhang-haojie\/wesam`))();">
+                    <span>
+                        <svg data-icon="github" fill="#000000" aria-hidden="true" viewBox="64 64 896 896" style="width: calc(var(--largeFont))">
+                            <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z" fill="#ffffff">
+                            </path>
+                        </svg>
+                    </span>
+                    <span style="margin-left: 10px">Code</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_content">
+            <div class="row">
+                <div class="section">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p class="text-justify">
+                            <b>TL;DR:</b> We present LetsTalk, an innotative Diffusion Transformer with tailored fusion schemes for audio-driven portrait animation, achieving excellent portrait consistency and liveliness in the generated animations.
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-md-offset-2">
+                    <center>
+                    <h1>
+                        Abstract
+                    </h1>
+                    </center>
+                    <p class="text-justify">
+                        Portrait image animation using audio has rapidly advanced, enabling the creation of increasingly realistic and expressive animated faces. The challenges of this multimodality-guided video generation task involve fusing various modalities while ensuring consistency in timing and portrait. We further seek to produce vivid talking heads. 
+                        To address these challenges, we present <b>LetsTalk</b> (<b>L</b>at<b>E</b>nt Diffusion <b>T</b>ran<b>S</b>former for <b>Talk</b>ing Video Synthesis), a diffusion transformer that incorporates modular temporal and spatial attention mechanisms to merge multimodality and enhance spatial-temporal consistency. 
+                        To handle multimodal conditions, we first summarize three fusion schemes, ranging from shallow to deep fusion compactness, and thoroughly explore their impact and applicability. Then we propose a suitable solution according to the modality differences of image, audio, and video generation. 
+                        For portrait, we utilize a deep fusion scheme (Symbiotic Fusion) to ensure portrait consistency. For audio, we implement a shallow fusion scheme (Direct Fusion) to achieve audio-animation alignment while preserving diversity. Our extensive experiments demonstrate that our approach generates temporally coherent and realistic videos with enhanced diversity and liveliness.
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <center>
+                    <img width="90%" src="asserts/letstalk/pipeline.png">
+                    </center>
+                    <p class="text-justify">
+                        The overview of our method (a) and the illustration of our designed transformer block (b). For better illustration, we omit the timestep encoder and Layer Norm in (b). LetsTalk integrates transformer blocks equipped with both temporal and spatial attention modules, designed to capture intra-frame spatial details and establish temporal correspondence across time steps. 
+                        After obtaining portrait and audio embeddings, Symbiotic Fusion is used for fusing the portrait embedding and Direct Fusion is for fusing the audio embedding. Notably, we repeat the portrait embedding along the frame axis to make it have the same shape as the noise embedding.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <center>
+                    <h1>
+                        Visualization
+                    </h1>
+                    <h2>
+                        English Speaking 1
+                    </h2>
+                    <div class="center">
+                        <video  width="90%" playsinline poster controls loop muted>
+                            <source src="./English-woman.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+                    <h2>
+                        English Speaking 2
+                    </h2>
+                    <div class="center">
+                        <video  width="90%" playsinline poster controls loop muted>
+                            <source src="./English-woman2.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+                    <h2>
+                        English Speaking 3
+                    </h2>
+                    <div class="center">
+                        <video  width="90%" playsinline poster controls loop muted>
+                            <source src="./English-man.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+                    <h2>
+                        Chinese Speaking 1
+                    </h2>
+                    <div class="center">
+                        <video  width="90%" playsinline poster controls loop muted>
+                            <source src="./Chinese-woman.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+                    <h2>
+                        Chinese Speaking 2
+                    </h2>
+                    <div class="center">
+                        <video  width="90%" playsinline poster controls loop muted>
+                            <source src="./Chinese-man.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+                    <h2>
+                        Singing
+                    </h2>
+                    <div class="center">
+                        <video  width="90%" playsinline poster controls loop muted>
+                            <source src="./Singing.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+                    <h2>
+                        AI-generated Portraits
+                    </h2>
+                    <div class="center">
+                        <video  width="90%" playsinline poster controls loop muted>
+                            <source src="./AI-avatars.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+                    </center>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="title">
+                    Citation
+                </div>
+                <hr>
+                <div class="content">
+                    <pre data-v-66da7b8f="" style="overflow: auto; background: rgb(230, 230, 230); border-radius: 10px;"><code>  
+    @article{
+    }
+                </code></pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+<script>
+    addEventListener("DOMContentLoaded", e => {
+        let new_val = document.body.clientWidth;
+        if (new_val < 800){
+            new_val = new_val / 0.6;
+        } else if (new_val > 1240){
+            new_val = 1240;
+        }
+
+        const smallFont = new_val * 0.015 + 'px';
+        const largeFont = new_val * 0.02 + 'px';
+
+        const main_div = document.getElementsByClassName('main')[0];
+        main_div.style='--smallFont: ' + smallFont + '; --largeFont: ' + largeFont;
+    })
+
+    addEventListener("resize", e => {
+        let new_val = document.body.clientWidth;
+        if (new_val < 800){
+            new_val = new_val / 0.6;
+        } else if (new_val > 1240){
+            new_val = 1240;
+        }
+
+        const smallFont = new_val * 0.015 + 'px';
+        const largeFont = new_val * 0.02 + 'px';
+
+        const main_div = document.getElementsByClassName('main')[0];
+        main_div.style='--smallFont: ' + smallFont + '; --largeFont: ' + largeFont;
+    });
+
+</script>
+</html>
