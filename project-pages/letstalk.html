@@ -6,6 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LetsTalk</title>
+    <style>
+        .container1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .container1 img {
+            height: 300px;
+            /* margin: 10px; */
+        }
+        .container2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .container2 img {
+            height: 400px;
+            /* margin: 10px; */
+        }
+        .figure {
+            text-align: center;
+        }
+    </style>
+    
 </head>
 
 
@@ -185,7 +209,7 @@
 
             <div class="authors">
                 <a href="https://zhang-haojie.github.io/" target="_blank">Haojie Zhang<sup>1</sup>*</a>,&nbsp;&nbsp;
-                Zhihao Liang<sup>1</sup>*,&nbsp;&nbsp;
+                <a href="lzhnb.github.io" target="_blank">Zhihao Liang<sup>1</sup>*</a>,&nbsp;&nbsp;
                 Ruibo Fu<sup>2</sup><sup>&dagger;</sup>,&nbsp;&nbsp;
                 Zhengqi Wen<sup>3</sup>,&nbsp;&nbsp;
                 Xuefei Liu<sup>2</sup>,
@@ -233,19 +257,39 @@
 
         <div class="main_content">
             <div class="row">
-                <div class="section">
-                    <div class="col-md-8 col-md-offset-2">
-                        <p class="text-justify">
-                            <b>TL;DR:</b> We present LetsTalk, an innotative Diffusion Transformer with tailored fusion schemes for audio-driven portrait animation, achieving excellent portrait consistency and liveliness in the generated animations.
+                <div class="col-md-8 col-md-offset-2">
+                    <p class="text-justify">
+                        <b>TL;DR:</b> We present LetsTalk, an innotative Diffusion Transformer with tailored fusion schemes for audio-driven portrait animation, achieving excellent portrait consistency and liveliness in the generated animations.
+                    <br>
+                    <br>
+                    <div class="container1"> 
+                        <figure class="figure">
+                            <img src="asserts/letstalk/teaser1.png"> 
+                        </figure> 
+                        <figure class="figure"> 
+                            <img src="asserts/letstalk/teaser2.png"> 
+                        </figure>
                     </div>
+                    <p class="text-justify">
+                        We propose <b>LetsTalk</b>, a diffusion-based transformer for audio-driven portrait image animation.
+                        <b><i>Left</i></b>: Given a single reference image and audio, LetsTalks can produce a realistic and vivid video aligned with the input audio.
+                        Note that each column corresponds to the same audio.
+                        The results show that LetsTalk can drive consistent and reasonable mouth motions for the input audio.
+                        <b><i>Right</i></b>: Generation quality <i>vs.</i> inference time on the HDTF dataset, the circle area reflects the number of parameters of the method.
+                        Our LetsTalk achieves the best quality while also being highly efficient in inference, compared to current mainstream diffusion-based methods such as Hallo and AniPortrait. 
+                        In addition, our base version <em>LetsTalk-B</em> achieves performance similar to Hallo with only 8 &times; fewer parameters.                
                 </div>
 
+                <br>
                 <div class="col-md-8 col-md-offset-2">
                     <center>
                     <h1>
                         Abstract
                     </h1>
                     </center>
+                    <br>
+                    <hr>
+                    <br>
                     <p class="text-justify">
                         Portrait image animation using audio has rapidly advanced, enabling the creation of increasingly realistic and expressive animated faces. The challenges of this multimodality-guided video generation task involve fusing various modalities while ensuring consistency in timing and portrait. We further seek to produce vivid talking heads. 
                         To address these challenges, we present <b>LetsTalk</b> (<b>L</b>at<b>E</b>nt Diffusion <b>T</b>ran<b>S</b>former for <b>Talk</b>ing Video Synthesis), a diffusion transformer that incorporates modular temporal and spatial attention mechanisms to merge multimodality and enhance spatial-temporal consistency. 
@@ -254,22 +298,67 @@
                 </div>
             </div>
 
+            <br>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <center>
-                    <img width="90%" src="asserts/letstalk/pipeline.png">
+                    <h1>
+                        Method
+                    </h1>
                     </center>
+                    <br>
+                    <hr>
+                    <br>
+                    <!-- <center>
+                    <img width="90%" src="asserts/letstalk/pipeline.png">
+                    </center> -->
+                    <div class="container2"> 
+                        <figure class="figure">
+                            <img src="asserts/letstalk/pipeline1.png"> 
+                            <figcaption>(a) Overview of LetsTalk</figcaption> 
+                        </figure> 
+                        <figure class="figure"> 
+                            <img src="asserts/letstalk/pipeline2.png"> 
+                            <figcaption>(b) Transformer Block</figcaption> 
+                        </figure> 
+                    </div>
                     <p class="text-justify">
                         The overview of our method (a) and the illustration of our designed transformer block (b). For better illustration, we omit the timestep encoder and Layer Norm in (b). LetsTalk integrates transformer blocks equipped with both temporal and spatial attention modules, designed to capture intra-frame spatial details and establish temporal correspondence across time steps. 
                         After obtaining portrait and audio embeddings, Symbiotic Fusion is used for fusing the portrait embedding and Direct Fusion is for fusing the audio embedding. Notably, we repeat the portrait embedding along the frame axis to make it have the same shape as the noise embedding.
+                    <br>
+                    <br>
+                    <div class="container1"> 
+                        <figure class="figure">
+                            <img src="asserts/letstalk/direct2.png"> 
+                            <figcaption>Direct Fusion</figcaption> 
+                        </figure> 
+                        <figure class="figure"> 
+                            <img src="asserts/letstalk/siamese2.png"> 
+                            <figcaption>Siamese Fusion</figcaption> 
+                        </figure>
+                        <figure class="figure"> 
+                            <img src="asserts/letstalk/symbiotic2.png"> 
+                            <figcaption>Symbiotic Fusion</figcaption> 
+                        </figure> 
+                    </div>
+                    <p class="text-justify">
+                        Illustration of three multimodal fusion schemes, our transformer backbone is formed by the left-side blocks.
+                        (a) <b>Direct Fusion</b>. Directly feeding condition into each block's cross-attention module;
+                        (b) <b>Siamese Fusion</b>. Maintaining a similar transformer and feeding the condition into it, extracting the corresponding features to guide the features in the backbone;
+                        (c) <b>Symbiotic Fusion</b>. Concatenating modality with the input at the beginning, then feeding it into the backbone, achieving fusion via the inherent self-attention mechanisms.
                 </div>
             </div>
+
+            <br>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <center>
                     <h1>
                         Visualization
                     </h1>
+                    <br>
+                    <hr>
+                    <br>                
                     <h2>
                         English Speaking 1
                     </h2>
@@ -278,6 +367,7 @@
                             <source src="./English-woman.mp4" type="video/mp4"/>
                         </video>
                     </div>
+                    <br>
                     <h2>
                         English Speaking 2
                     </h2>
@@ -286,6 +376,7 @@
                             <source src="./English-woman2.mp4" type="video/mp4"/>
                         </video>
                     </div>
+                    <br>
                     <h2>
                         English Speaking 3
                     </h2>
@@ -294,6 +385,7 @@
                             <source src="./English-man.mp4" type="video/mp4"/>
                         </video>
                     </div>
+                    <br>
                     <h2>
                         Chinese Speaking 1
                     </h2>
@@ -302,6 +394,7 @@
                             <source src="./Chinese-woman.mp4" type="video/mp4"/>
                         </video>
                     </div>
+                    <br>
                     <h2>
                         Chinese Speaking 2
                     </h2>
@@ -310,6 +403,7 @@
                             <source src="./Chinese-man.mp4" type="video/mp4"/>
                         </video>
                     </div>
+                    <br>
                     <h2>
                         Singing
                     </h2>
@@ -318,6 +412,7 @@
                             <source src="./Singing.mp4" type="video/mp4"/>
                         </video>
                     </div>
+                    <br>
                     <h2>
                         AI-generated Portraits
                     </h2>
