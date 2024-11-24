@@ -136,7 +136,7 @@
                             <b>TL;DR:</b> We present LetsTalk, an innotative Diffusion Transformer with tailored fusion schemes for audio-driven portrait animation, achieving excellent portrait consistency and liveliness in the generated animations.
                         </p>
                     </div>
-                    <img width="100%" src="assets/teaser.png" />
+                    <img width="100%" src="assets/letstalk/teaser.png" />
                     <div class="content has-text-justified">
                         <p style="margin-top: 0px">
                             We propose <b>LetsTalk</b>, a diffusion-based transformer for audio-driven portrait image animation.
@@ -178,14 +178,14 @@
                 <div class="column is-full-width">
                     <h2 class="title is-3" style="margin-top: 0px">Method</h2>
                     <hr style="margin-top: 0px">
-                    <img width="100%" src="assets/pipeline.png" />
+                    <img width="100%" src="assets/letstalk/pipeline.png" />
                     <div class="content has-text-justified">
                         <p style="margin-top: 10px">
                             The overview of our method (a) and the illustration of our designed transformer block (b). For better illustration, we omit the timestep encoder and Layer Norm in (b). LetsTalk integrates transformer blocks equipped with both temporal and spatial attention modules, designed to capture intra-frame spatial details and establish temporal correspondence across time steps. After obtaining portrait and audio embeddings, Symbiotic Fusion is used for fusing the portrait embedding and Direct Fusion is for fusing the audio embedding. Notably, we repeat the portrait embedding along the frame axis to make it have the same shape as the noise embedding.
                         </p>
                     </div>
                     <br>
-                    <img width="100%" src="assets/schemes.png"/>
+                    <img width="100%" src="assets/letstalk/schemes.png"/>
                     <div class="content has-text-justified">
                         <p style="margin-top: 10px">
                             Illustration of three multimodal fusion schemes, our transformer backbone is formed by the left-side blocks.<br>
