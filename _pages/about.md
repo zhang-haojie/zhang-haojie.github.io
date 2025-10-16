@@ -29,8 +29,6 @@ My lifelong research goal is to bridge perception, understanding, and imaginatio
 
 I am always open to academic discussions and collaborations. If you are interested in my research or have any questions, feel free to contact me!
 
----
-
 
 # 📝 Selected Publications
 
@@ -45,6 +43,8 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 
 - We propose WeSAM, a weakly supervised self-training framework with anchor regularization and low-rank adaptation, which enables efficient adaptation of foundation models (e.g., SAM) for diverse image segmentation tasks. WeSAM outperforms SAM and other state-of-the-art methods on five challenging benchmarks.
 
+</div>
+</div>
 
 <!-- 2. WeSAM++ (TPAMI under review) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">TPAMI Under Review</div><img src="images/wesampp.webp" alt="wesampp" width="100%"></div></div>
@@ -56,6 +56,8 @@ Under review at IEEE TPAMI 2025
 
 - We propose WeSAM++, which introduces patch-level contrastive loss for better feature alignment and incorporates Masked Image Modeling to enhance encoder consistency and robustness. Our method achieves superior generalization on unsupervised adaptation, open-vocabulary segmentation, and SAM2 adaptation.
 
+</div>
+</div>
 
 <!-- 3. LetsTalk (TMM under review) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">TMM Under Review</div><img src="images/letstalk.webp" alt="letstalk" width="100%"></div></div>
@@ -68,6 +70,8 @@ Under review at IEEE Transactions on Multimedia (TMM), 2025
 
 - We propose LetsTalk, a diffusion transformer for audio-driven portrait animation. By leveraging DC-VAE and linear attention, LetsTalk enables efficient multimodal fusion and consistent portrait generation, while memory bank and noise-regularized training further improve the quality and stability of long-duration videos.
 
+</div>
+</div>
 
 <!-- 4. Patch-as-Decodable-Token (ICLR under review) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">ICLR Under Review</div><img src="images/padt.webp" alt="vrt" width="100%"></div></div>
@@ -80,6 +84,8 @@ Under review at ICLR 2026
 
 - We propose the Visual Reference Token (VRT), which is generated from the visual features of a query image and can serve as a target referent. The unified decoder designed based on VRT supports multiple vision tasks. To optimize VRT, we dynamically expand the embedding table of the MLLM and jointly optimize both visual and textual tokens via an autoregressive loss, achieving deep multi-modal fusion.
 
+</div>
+</div>
 
 <!-- 5. PointSAM (TGRS 2025) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">TGRS 2025</div><img src="images/pointsam.webp" alt="pointsam" width="100%"></div></div>
@@ -92,6 +98,8 @@ IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2025
 
 - We propose PointSAM, an enhanced self-training framework for remote sensing image segmentation that introduces prototype constraints via the Hungarian algorithm and negative prompt calibration with non-overlapping masks, effectively reducing pseudo-label noise and object merging.
 
+</div>
+</div>
 
 <!-- 6. Sur2f (ECCV 2024) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">ECCV 2024</div><img src="images/sur2f.webp" alt="sur2f" width="100%"></div></div>
@@ -104,8 +112,9 @@ European Conference on Computer Vision (ECCV), 2024
 
 - We propose Sur2f, a multi-view 3D reconstruction framework that jointly learns an implicit SDF and an explicit deformable mesh via a neural shader; by synchronizing mesh deformation and enabling surface-guided sampling, Sur2f efficiently reconstructs detailed and complex surfaces from multi-view images.
 
+</div>
+</div>
 
----
 
 # 🎓 Education
 
@@ -120,7 +129,6 @@ European Conference on Computer Vision (ECCV), 2024
 - *2019.09 - 2023.06*, BTech in Information Engineering, South China University of Technology, Guangzhou  
   Graduated with Distinction, GPA: 3.64/4.0
 
----
 
 # 💼 Internship Experience
 
@@ -135,7 +143,6 @@ European Conference on Computer Vision (ECCV), 2024
 - **Institute of Automation, Tsinghua University**, Beijing, 2024.04 – 2024.11  
   - Researched audio and video representations, exploring audio-visual conversion and multimodal conditional guidance for video generation.
 
----
 
 # 🏆 Awards
 
