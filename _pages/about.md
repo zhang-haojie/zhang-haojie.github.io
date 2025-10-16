@@ -25,9 +25,10 @@ My lifelong research goal is to bridge perception, understanding, and imaginatio
 - Generative Models (Diffusion models, controllable video generation, talking head synthesis)  
 - Vision-Language Models (MLLMs, unified vision tasks, visual grounding)  
 - Foundational Vision Models (Segmentation foundation models, domain adaptation, semantic perception)  
-- 3D Vision (Multi-view 3D reconstruction, hybrid surface representations)
 
 I am always open to academic discussions and collaborations. If you are interested in my research or have any questions, feel free to contact me!
+
+> <span style="color:red;"><i><b>News:</b> I am actively seeking job opportunities related to <b>multimodal large models</b> or <b>generative models</b>. If you have any relevant positions or collaborations, please feel free to contact me!</i></span>
 
 
 # 📝 Selected Publications
@@ -122,14 +123,14 @@ European Conference on Computer Vision (ECCV), 2024
   Supervised by Prof. Kui Jia.  
 
 - *2024.04 - 2024.11*, Visiting Student, Department of Automation, Tsinghua University, Beijing  
-  Advised by Prof. Jianhua Tao.  
+  Advised by Prof. Jianhua Tao.
 
 - *2019.09 - 2023.06*, BTech in Information Engineering, South China University of Technology, Guangzhou  
 
 
 # 💼 Internship Experience
 
-- **Tencent WeChat Business Group**, Visual Technology Center, Infrastructure Department, Shenzhen, 2025.04 – Now  
+- **Tencent WeChat Business Group**, WeChat Vision, Shenzhen, 2025.04 – Now  
 
-- **Tencent Interactive Entertainment Group (IEG)**, Photon Studio Group, Shenzhen, 2024.12 – 2025.03  
+- **Tencent Interactive Entertainment Group (IEG)**, LIGHTSPEED, Shenzhen, 2024.12 – 2025.03  
 
