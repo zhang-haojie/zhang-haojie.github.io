@@ -79,7 +79,7 @@ Under review at IEEE Transactions on Multimedia (TMM), 2025
 <div class="paper-box-text" markdown="1">
 
 **Patch-as-Decodable-Token: Towards Unified Multi-Modal Vision Tasks in MLLMs**  
-Yongyi Su\*, **Haojie Zhang\***, Shijie Li, Nanqing Liu, Jingyi Liao, Junyi Pan, Yuan Liu, Xiaofen Xing, Chong Sun, Chen Li, Nancy F. Chen, Shuicheng Yan, Xulei Yang, Xun Xu
+Yongyi Su\*, **Haojie Zhang\***, Shijie Li, Nanqing Liu, Jingyi Liao, Junyi Pan, Yuan Liu, Xiaofen Xing, Chong Sun, Chen Li, Nancy F. Chen, Shuicheng Yan, Xulei Yang, Xun Xu  
 Under review at ICLR 2026  
 [**arXiv**](https://arxiv.org/abs/2510.01954) | [**Code**](https://github.com/Gorilla-Lab-SCUT/PaDT.git)
 
