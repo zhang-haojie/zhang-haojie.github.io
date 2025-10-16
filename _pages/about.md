@@ -120,31 +120,16 @@ European Conference on Computer Vision (ECCV), 2024
 
 - *2023.09 - Now*, MSc in Information and Communication Engineering, South China University of Technology, Guangzhou  
   Supervised by Prof. Kui Jia.  
-  **Research:** Domain Adaptation, Semantic Perception, 3D Reconstruction
 
 - *2024.04 - 2024.11*, Visiting Student, Department of Automation, Tsinghua University, Beijing  
   Advised by Prof. Jianhua Tao.  
-  **Research:** Diffusion Model, Video Generation, Talking Head
 
 - *2019.09 - 2023.06*, BTech in Information Engineering, South China University of Technology, Guangzhou  
-  Graduated with Distinction, GPA: 3.64/4.0
 
 
 # 💼 Internship Experience
 
 - **Tencent WeChat Business Group**, Visual Technology Center, Infrastructure Department, Shenzhen, 2025.04 – Now  
-  - Explored large-scale human-centric multimodal understanding by constructing and analyzing a tens-of-millions image-text dataset and associated vision-language processing pipelines.
-  - Advanced research on Chinese vision-language models by investigating DINOv2-based self-supervised pretraining and instruction tuning for improved multimodal alignment.
 
 - **Tencent Interactive Entertainment Group (IEG)**, Photon Studio Group, Shenzhen, 2024.12 – 2025.03  
-  - Researched advanced 3D segmentation and texturing algorithms, integrating 3D segmentation techniques with diffusion model-based mesh texturing.
-  - Explored autoregressive video generation architectures and lightweight conditional guidance strategies.
-
-- **Institute of Automation, Tsinghua University**, Beijing, 2024.04 – 2024.11  
-  - Researched audio and video representations, exploring audio-visual conversion and multimodal conditional guidance for video generation.
-
-
-# 🏆 Awards
-
-- First Prize, Guangdong Undergraduate Mathematical Contest in Modeling, 2021
 
