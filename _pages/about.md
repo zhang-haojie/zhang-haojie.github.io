@@ -33,12 +33,26 @@ I am always open to academic discussions and collaborations. If you are interest
 
 # 📝 Selected Publications
 
+<!-- 4. Patch-as-Decodable-Token (ICLR under review) -->
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ICLR Under Review</div><img src="images/padt.webp" alt="vrt" width="100%"></div></div>
+<div class="paper-box-text" markdown="1">
+
+**Patch-as-Decodable-Token: Towards Unified Multi-Modal Vision Tasks in MLLMs**  
+Yongyi Su\*, **Haojie Zhang\***, Shijie Li, Nanqing Liu, Jingyi Liao, Junyi Pan, Yuan Liu, Xiaofen Xing, Chong Sun, Chen Li, Nancy F. Chen, Shuicheng Yan, Xulei Yang, Xun Xu  
+Under review at ICLR 2026  
+[**arXiv**](https://arxiv.org/abs/2510.01954) | [**Code**](https://github.com/Gorilla-Lab-SCUT/PaDT.git)
+
+- We propose the Visual Reference Token (VRT), which is generated from the visual features of a query image and can serve as a target referent. The unified decoder designed based on VRT supports multiple vision tasks. To optimize VRT, we dynamically expand the embedding table of the MLLM and jointly optimize both visual and textual tokens via an autoregressive loss, achieving deep multi-modal fusion.
+
+</div>
+</div>
+
 <!-- 1. WeSAM (CVPR 2024) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">CVPR 2024</div><img src="images/wesam.webp" alt="wesam" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation**  
-**Haojie Zhang\***, Yongyi Su\*, Xun Xu<sup>+</sup>, Kui Jia  
+**Haojie Zhang**, Yongyi Su, Xun Xu<sup>+</sup>, Kui Jia  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024  
 [**Paper**](https://ieeexplore.ieee.org/document/10657214) | [**arXiv**](http://arxiv.org/abs/2312.03502) | [**Project**](https://zhang-haojie.github.io/project-pages/wesam.html) | [**Code**](https://github.com/zhang-haojie/wesam)
 
@@ -52,7 +66,7 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 <div class="paper-box-text" markdown="1">
 
 **Improving the Generalization of Segmentation Foundation Models via Weakly-Supervised and Unsupervised Adaptation**  
-**Haojie Zhang\***, Yongyi Su\*, Nanqing Liu, Xulei Yang, Kui Jia, Xun Xu  
+**Haojie Zhang**, Yongyi Su, Nanqing Liu, Xulei Yang, Kui Jia, Xun Xu  
 Under review at IEEE TPAMI 2025  
 
 - We propose WeSAM++, which introduces patch-level contrastive loss for better feature alignment and incorporates Masked Image Modeling to enhance encoder consistency and robustness. Our method achieves superior generalization on unsupervised adaptation, open-vocabulary segmentation, and SAM2 adaptation.
@@ -65,25 +79,11 @@ Under review at IEEE TPAMI 2025
 <div class="paper-box-text" markdown="1">
 
 **Efficient Long-duration Talking Video Synthesis with Linear Diffusion Transformer under Multimodal Guidance**  
-**Haojie Zhang\***, Zhihao Liang, Ruibo Fu, Bingyan Liu, Zhengqi Wen, Xuefei Liu, Jianhua Tao, Yaling Liang  
+**Haojie Zhang**, Zhihao Liang, Ruibo Fu, Bingyan Liu, Zhengqi Wen, Xuefei Liu, Jianhua Tao, Yaling Liang  
 Under review at IEEE Transactions on Multimedia (TMM), 2025  
 [**arXiv**](https://arxiv.org/abs/2411.16748) | [**Code**](https://github.com/zhang-haojie/letstalk)
 
 - We propose LetsTalk, a diffusion transformer for audio-driven portrait animation. By leveraging DC-VAE and linear attention, LetsTalk enables efficient multimodal fusion and consistent portrait generation, while memory bank and noise-regularized training further improve the quality and stability of long-duration videos.
-
-</div>
-</div>
-
-<!-- 4. Patch-as-Decodable-Token (ICLR under review) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ICLR Under Review</div><img src="images/padt.webp" alt="vrt" width="100%"></div></div>
-<div class="paper-box-text" markdown="1">
-
-**Patch-as-Decodable-Token: Towards Unified Multi-Modal Vision Tasks in MLLMs**  
-Yongyi Su\*, **Haojie Zhang\***, Shijie Li, Nanqing Liu, Jingyi Liao, Junyi Pan, Yuan Liu, Xiaofen Xing, Chong Sun, Chen Li, Nancy F. Chen, Shuicheng Yan, Xulei Yang, Xun Xu  
-Under review at ICLR 2026  
-[**arXiv**](https://arxiv.org/abs/2510.01954) | [**Code**](https://github.com/Gorilla-Lab-SCUT/PaDT.git)
-
-- We propose the Visual Reference Token (VRT), which is generated from the visual features of a query image and can serve as a target referent. The unified decoder designed based on VRT supports multiple vision tasks. To optimize VRT, we dynamically expand the embedding table of the MLLM and jointly optimize both visual and textual tokens via an autoregressive loss, achieving deep multi-modal fusion.
 
 </div>
 </div>
@@ -119,11 +119,11 @@ European Conference on Computer Vision (ECCV), 2024
 
 # 🎓 Education
 
-- *2023.09 - Now*, MSc in Information and Communication Engineering, South China University of Technology, Guangzhou  
-  Supervised by Prof. Kui Jia.  
-
 - *2024.04 - 2024.11*, Visiting Student, Department of Automation, Tsinghua University, Beijing  
   Advised by Prof. Jianhua Tao.
+
+- *2023.09 - 2026.06*, MSc in Information and Communication Engineering, South China University of Technology, Guangzhou  
+  Supervised by Prof. Kui Jia.  
 
 - *2019.09 - 2023.06*, BTech in Information Engineering, South China University of Technology, Guangzhou  
 
@@ -132,5 +132,5 @@ European Conference on Computer Vision (ECCV), 2024
 
 - **Tencent WeChat Business Group**, WeChat Vision, Shenzhen, 2025.04 – Now  
 
-- **Tencent Interactive Entertainment Group (IEG)**, LIGHTSPEED, Shenzhen, 2024.12 – 2025.03  
+- **Tencent Interactive Entertainment Group**, LIGHTSPEED, Shenzhen, 2024.12 – 2025.03  
 
