@@ -68,7 +68,7 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 **Improving the Generalization of Segmentation Foundation Models via Weakly-Supervised and Unsupervised Adaptation**  
 **Haojie Zhang**, Yongyi Su, Nanqing Liu, Xulei Yang, Kui Jia, Xun Xu  
 Under review at IEEE TPAMI 2025  
-[**arXic**](https://www.preprints.org/manuscript/202510.1640) | [**Code**](https://github.com/zhang-haojie/wesam)
+[**Preprint**](https://www.preprints.org/manuscript/202510.1640) | [**Code**](https://github.com/zhang-haojie/wesam)
 
 - We propose WeSAM++, which introduces patch-level contrastive loss for better feature alignment and incorporates Masked Image Modeling to enhance encoder consistency and robustness. Our method achieves superior generalization on unsupervised adaptation, open-vocabulary segmentation, and SAM2 adaptation.
 
