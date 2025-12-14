@@ -28,7 +28,7 @@ My lifelong research goal is to bridge perception, understanding, and imaginatio
 
 I am always open to academic discussions and collaborations. If you are interested in my research or have any questions, feel free to contact me!
 
-> <span style="color:red;"><i><b>News:</b> I am actively seeking job opportunities related to <b>multimodal large models</b> or <b>generative models</b>. If you have any relevant positions or collaborations, please feel free to contact me!</i></span>
+<!-- > <span style="color:red;"><i><b>News:</b> I am actively seeking job opportunities related to <b>multimodal large models</b> or <b>generative models</b>. If you have any relevant positions or collaborations, please feel free to contact me!</i></span> -->
 
 
 # 📝 Selected Publications
