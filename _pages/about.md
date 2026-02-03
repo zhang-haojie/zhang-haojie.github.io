@@ -33,13 +33,13 @@ I am always open to academic discussions and collaborations. If you are interest
 
 # 📝 Selected Publications
 
-<!-- 4. Patch-as-Decodable-Token (ICLR under review) -->
+<!-- 4. Patch-as-Decodable-Token (ICLR 2026) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">ICLR Under Review</div><img src="images/padt.webp" alt="vrt" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **Patch-as-Decodable-Token: Towards Unified Multi-Modal Vision Tasks in MLLMs**  
 Yongyi Su\*, **Haojie Zhang\***, Shijie Li, Nanqing Liu, Jingyi Liao, Junyi Pan, Yuan Liu, Xiaofen Xing, Chong Sun, Chen Li, Nancy F. Chen, Shuicheng Yan, Xulei Yang, Xun Xu  
-The Fourteenth International Conference on Learning Representations (ICLR), 2026  
+The International Conference on Learning Representations (ICLR), 2026  
 [**arXiv**](https://arxiv.org/abs/2510.01954) | [**Code**](https://github.com/Gorilla-Lab-SCUT/PaDT.git)
 
 - We propose the Visual Reference Token (VRT), which is generated from the visual features of a query image and can serve as a target referent. The unified decoder designed based on VRT supports multiple vision tasks. To optimize VRT, we dynamically expand the embedding table of the MLLM and jointly optimize both visual and textual tokens via an autoregressive loss, achieving deep multi-modal fusion.
@@ -75,7 +75,7 @@ Under review at IEEE TPAMI 2025
 </div>
 </div>
 
-<!-- 3. LetsTalk (TMM under review) -->
+<!-- 3. LetsTalk (IEEE TMM) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">TMM Under Review</div><img src="images/letstalk.webp" alt="letstalk" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
