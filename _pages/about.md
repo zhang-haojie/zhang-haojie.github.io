@@ -34,7 +34,7 @@ I am always open to academic discussions and collaborations. If you are interest
 # 📝 Selected Publications
 
 <!-- 4. Patch-as-Decodable-Token (ICLR 2026) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ICLR Under Review</div><img src="images/padt.webp" alt="vrt" width="100%"></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ICLR 2026</div><img src="images/padt.webp" alt="vrt" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **Patch-as-Decodable-Token: Towards Unified Multi-Modal Vision Tasks in MLLMs**  
@@ -76,7 +76,7 @@ Under review at IEEE TPAMI 2025
 </div>
 
 <!-- 3. LetsTalk (IEEE TMM) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">TMM Under Review</div><img src="images/letstalk.webp" alt="letstalk" width="100%"></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">TMM 2026</div><img src="images/letstalk.webp" alt="letstalk" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **Efficient Long-duration Talking Video Synthesis with Linear Diffusion Transformer under Multimodal Guidance**  
