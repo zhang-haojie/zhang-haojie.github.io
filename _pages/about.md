@@ -90,7 +90,7 @@ IEEE Transactions on Multimedia (TMM), 2026
 </div>
 
 <!-- 5. MuSS (ACM MM 2026 under review) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ACM MM 2026 Under Review</div><img src="images/500x300.png" alt="muss" width="100%"></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ACM MM 2026 Under Review</div><img src="images/MuSS.jpg" alt="muss" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **MuSS: A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation**  
@@ -103,7 +103,7 @@ Under review at ACM Multimedia (ACM MM), 2026
 </div>
 
 <!-- 6. DiffCap-Bench (ACM MM 2026 under review) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ACM MM 2026 Under Review</div><img src="images/500x300.png" alt="diffcap" width="100%"></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ACM MM 2026 Under Review</div><img src="images/DiffCap.jpg" alt="diffcap" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **DiffCap-Bench: A Comprehensive, Challenging, Robust Benchmark for Image Difference Captioning**  
@@ -130,14 +130,9 @@ Under review at ACM Multimedia (ACM MM), 2026
 
 # 💼 Internship Experience
 
-- **Tencent Technology and Engineering Group**, Hunyuan Team, Shenzhen, 2025.10 – 2026.03  
-  Multi-shot dataset construction and image editing research for HunyuanImage-Edit, including synthetic data pipeline design and robust captioning for edit pairs.
-
-- **Tencent WeChat Business Group**, WeChat Vision, Shenzhen, 2025.04 – 2025.10  
-  Worked on large-scale vision-language modeling and spatio-temporal representation learning, including Chinese CLIP optimization and DINOv2-based video understanding.
-
-- **Tencent Interactive Entertainment Group**, LIGHTSPEED, Shenzhen, 2024.12 – 2025.03  
-  Worked on semantics-aware 3D texturing and autoregressive video generation with reference-image condition injection.
+- *2025.10 - 2026.03*, Tencent Technology and Engineering Group, Hunyuan Team, Shenzhen
+- *2025.04 - 2025.10*, Tencent WeChat Business Group, WeChat Vision, Shenzhen
+- *2024.12 - 2025.03*, Tencent Interactive Entertainment Group, LIGHTSPEED, Shenzhen
 
 
 # 🏅 Honors
