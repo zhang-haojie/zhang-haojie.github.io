@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Haojie Zhang"
-description              : "M.Eng in South China University of Techonology. Focusing on Computer Vision"
+description              : "M.Sc. student at South China University of Technology working on generative models, multimodal large language models, and foundational vision models."
 url                      : "https://zhang-haojie.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 repository               : "zhang-haojie/zhang-haojie.github.io"
 google_scholar_stats_use_cdn : true
@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Haojie Zhang"
-  avatar           : "images/zhang.haojie.webp"
-  bio              : "South China University of Techonology"
+  avatar           : "images/zhang.haojie.jpg"
+  bio              : "M.Sc. student at SCUT working on multimodal AI and computer vision"
   location         : "Guangzhou, China"
   employer         :
   pubmed           : 

@@ -17,23 +17,23 @@ redirect_from:
 
 <span class="anchor" id="about-me"></span>
 
-I am currently a Master’s student at [South China University of Technology (SCUT)](https://www.scut.edu.cn/en/), advised by Prof. [Kui Jia](http://kuijia.site/) and Dr. [Xun Xu](https://alex-xun-xu.github.io/). I received my Bachelor’s degree with distinction from SCUT in 2023, and expect to obtain my Master’s degree in 2026. From April to November 2024, I was a visiting student at the Department of Automation, Tsinghua University, advised by Prof. Jianhua Tao.
+I am currently an M.Sc. student in Information and Communication Engineering at [South China University of Technology (SCUT)](https://www.scut.edu.cn/en/), advised by Prof. [Kui Jia](http://kuijia.site/) and Dr. [Xun Xu](https://alex-xun-xu.github.io/). I previously received my B.Eng. in Information Engineering (Innovation Class) from SCUT with distinction in 2023. From April 2024 to November 2024, I was a visiting student at the Department of Automation, Tsinghua University, where I worked with Prof. Jianhua Tao.
 
-My lifelong research goal is to bridge perception, understanding, and imagination in intelligent systems, enabling machines to see, comprehend, and create as humans do. My current research interests include **generative models**, **vision-language models**, and **foundational vision models**. I am passionate about advancing the frontiers of computer vision and artificial intelligence, and am always eager to explore new ideas and collaborate with others.
+My long-term research goal is to bridge perception, understanding, and imagination in intelligent systems, enabling machines to see, comprehend, and create more like humans. My recent work spans **generative models**, **multimodal large language models**, and **foundational vision models**, with projects on talking video synthesis, unified multimodal vision tasks, segmentation foundation model adaptation, and multimodal evaluation benchmarks.
 
 **Research Interests:**  
-- Generative Models (Diffusion models, controllable video generation, talking head synthesis)  
-- Vision-Language Models (MLLMs, unified vision tasks, visual grounding)  
-- Foundational Vision Models (Segmentation foundation models, domain adaptation, semantic perception)  
+- Generative Models: diffusion models, controllable video generation, talking head synthesis, image editing
+- Multimodal Large Language Models: unified multimodal vision tasks, dense prediction with MLLMs, multimodal evaluation
+- Foundational Vision Models: segmentation foundation models, domain adaptation, semantic perception
 
-I am always open to academic discussions and collaborations. If you are interested in my research or have any questions, feel free to contact me!
+I am always open to research discussions, collaborations, and internship or full-time opportunities related to multimodal AI, generative modeling, and computer vision.
 
 <!-- > <span style="color:red;"><i><b>News:</b> I am actively seeking job opportunities related to <b>multimodal large models</b> or <b>generative models</b>. If you have any relevant positions or collaborations, please feel free to contact me!</i></span> -->
 
 
 # 📝 Selected Publications
 
-<!-- 4. Patch-as-Decodable-Token (ICLR 2026) -->
+<!-- 1. PaDT (ICLR 2026) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">ICLR 2026</div><img src="images/padt.webp" alt="vrt" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
@@ -42,12 +42,12 @@ Yongyi Su\*, **Haojie Zhang\***, Shijie Li, Nanqing Liu, Jingyi Liao, Junyi Pan,
 The International Conference on Learning Representations (ICLR), 2026  
 [**arXiv**](https://arxiv.org/abs/2510.01954) | [**Code**](https://github.com/Gorilla-Lab-SCUT/PaDT.git)
 
-- We propose the Visual Reference Token (VRT), which is generated from the visual features of a query image and can serve as a target referent. The unified decoder designed based on VRT supports multiple vision tasks. To optimize VRT, we dynamically expand the embedding table of the MLLM and jointly optimize both visual and textual tokens via an autoregressive loss, achieving deep multi-modal fusion.
+- We propose Patch-as-Decodable Token (PaDT), a unified multimodal paradigm that uses Visual Reference Tokens to let MLLMs directly generate diverse dense visual predictions, achieving strong performance across multiple perception tasks.
 
 </div>
 </div>
 
-<!-- 1. WeSAM (CVPR 2024) -->
+<!-- 2. WeSAM (CVPR 2024) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">CVPR 2024</div><img src="images/wesam.webp" alt="wesam" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
@@ -61,12 +61,12 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 </div>
 </div>
 
-<!-- 2. WeSAM++ (TPAMI under review) -->
+<!-- 3. WeSAM++ (TPAMI under review) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">TPAMI Under Review</div><img src="images/wesampp.webp" alt="wesampp" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **Improving the Generalization of Segmentation Foundation Models via Weakly-Supervised and Unsupervised Adaptation**  
-**Haojie Zhang**, Yongyi Su, Nanqing Liu, Xulei Yang, Kui Jia, Xun Xu  
+**Haojie Zhang**, Yongyi Su, Nanqing Liu, Xulei Yang, Xiangyu Yue, Kui Jia, Xun Xu  
 Under review at IEEE TPAMI 2025  
 [**Preprint**](https://www.preprints.org/manuscript/202510.1640) | [**Code**](https://github.com/zhang-haojie/wesam)
 
@@ -75,7 +75,7 @@ Under review at IEEE TPAMI 2025
 </div>
 </div>
 
-<!-- 3. LetsTalk (IEEE TMM) -->
+<!-- 4. LetsTalk (IEEE TMM) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">TMM 2026</div><img src="images/letstalk.webp" alt="letstalk" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
@@ -89,30 +89,28 @@ IEEE Transactions on Multimedia (TMM), 2026
 </div>
 </div>
 
-<!-- 5. PointSAM (TGRS 2025) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">TGRS 2025</div><img src="images/pointsam.webp" alt="pointsam" width="100%"></div></div>
+<!-- 5. MuSS (ACM MM 2026 under review) -->
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ACM MM 2026 Under Review</div><img src="images/500x300.png" alt="muss" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
-**PointSAM: Pointly-Supervised Segment Anything Model for Remote Sensing Images**  
-Nanqing Liu, Xun Xu, Yongyi Su, **Haojie Zhang**, Heng-Chao Li  
-IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2025  
-[**arXiv**](https://arxiv.org/abs/2409.13401)
+**MuSS: A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation**  
+**Haojie Zhang**, Di Wu, Bingyan Liu, Linjie Zhong, Yuancheng Wei, Xingsong Ye, Nanqing Liu  
+Under review at ACM Multimedia (ACM MM), 2026
 
-- We propose PointSAM, an enhanced self-training framework for remote sensing image segmentation that introduces prototype constraints via the Hungarian algorithm and negative prompt calibration with non-overlapping masks, effectively reducing pseudo-label noise and object merging.
+- We introduce MuSS, a large-scale cinematic multi-shot dataset and benchmark for subject-to-video generation, designed to evaluate narrative coherence, cross-shot identity consistency, and visual storytelling quality.
 
 </div>
 </div>
 
-<!-- 6. Sur2f (ECCV 2024) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ECCV 2024</div><img src="images/sur2f.webp" alt="sur2f" width="100%"></div></div>
+<!-- 6. DiffCap-Bench (ACM MM 2026 under review) -->
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ACM MM 2026 Under Review</div><img src="images/500x300.png" alt="diffcap" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
-**Sur<sup>2</sup>f: A Hybrid Representation for High-Quality and Efficient Surface Reconstruction from Multi-view Images**  
-Zhangjin Huang, Zhihao Liang, **Haojie Zhang**, Yangkai Lin, Kui Jia  
-European Conference on Computer Vision (ECCV), 2024  
-[**arXiv**](https://arxiv.org/abs/2401.03704) | [**Project**](https://huang-zhangjin.github.io/project-pages/sur2f.html)
+**DiffCap-Bench: A Comprehensive, Challenging, Robust Benchmark for Image Difference Captioning**  
+Yuancheng Wei\*, **Haojie Zhang\***, Linli Yao, Lei Li, Jiali Chen, Tao Huang, Yiting Lu, Duojun Huang, Xin Li, Zhao Zhong  
+Under review at ACM Multimedia (ACM MM), 2026
 
-- We propose Sur2f, a multi-view 3D reconstruction framework that jointly learns an implicit SDF and an explicit deformable mesh via a neural shader; by synchronizing mesh deformation and enabling surface-guided sampling, Sur2f efficiently reconstructs detailed and complex surfaces from multi-view images.
+- We introduce DiffCap-Bench, a challenging benchmark for image difference captioning, together with an LLM-as-a-Judge evaluation protocol that aligns well with human judgment and supports downstream image editing data construction.
 
 </div>
 </div>
@@ -124,16 +122,27 @@ European Conference on Computer Vision (ECCV), 2024
   Advised by Prof. Jianhua Tao.
 
 - *2023.09 - 2026.06*, MSc in Information and Communication Engineering, South China University of Technology, Guangzhou  
-  Supervised by Prof. Kui Jia.  
+  Supervised by Prof. Kui Jia and collaborating with Dr. Xun Xu.
 
-- *2019.09 - 2023.06*, BTech in Information Engineering, South China University of Technology, Guangzhou  
+- *2019.09 - 2023.06*, B.Eng. in Information Engineering (Innovation Class), South China University of Technology, Guangzhou  
+  Graduated with distinction, GPA 3.64/4.0, weighted average 86.1/100.
 
 
 # 💼 Internship Experience
 
-- **Tencent Technology and Engineering Group**, Hunyuan Team, Shenzhen, 2025.11 – Now
+- **Tencent Technology and Engineering Group**, Hunyuan Team, Shenzhen, 2025.10 – 2026.03  
+  Multi-shot dataset construction and image editing research for HunyuanImage-Edit, including synthetic data pipeline design and robust captioning for edit pairs.
 
 - **Tencent WeChat Business Group**, WeChat Vision, Shenzhen, 2025.04 – 2025.10  
+  Worked on large-scale vision-language modeling and spatio-temporal representation learning, including Chinese CLIP optimization and DINOv2-based video understanding.
 
 - **Tencent Interactive Entertainment Group**, LIGHTSPEED, Shenzhen, 2024.12 – 2025.03  
+  Worked on semantics-aware 3D texturing and autoregressive video generation with reference-image condition injection.
 
+
+# 🏅 Honors
+
+- First Prize, Guangdong Undergraduate Mathematical Contest in Modeling, 2021
+- National Encouragement Scholarship
+- Second Prize Scholarship
+- Merit Student and Excellent Student Cadre
