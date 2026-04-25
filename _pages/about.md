@@ -3,6 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
+show_masthead: false
 redirect_from: 
   - /about/
   - /about.html
@@ -33,21 +34,11 @@ I am always open to research discussions, collaborations, and internship or full
 
 # 📝 Selected Publications
 
-<!-- 1. PaDT (ICLR 2026) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ICLR 2026</div><img src="images/padt.webp" alt="vrt" width="100%"></div></div>
-<div class="paper-box-text" markdown="1">
+Grouped by research category and ordered to match my CV.
 
-**Patch-as-Decodable-Token: Towards Unified Multi-Modal Vision Tasks in MLLMs**  
-Yongyi Su\*, **Haojie Zhang\***, Shijie Li, Nanqing Liu, Jingyi Liao, Junyi Pan, Yuan Liu, Xiaofen Xing, Chong Sun, Chen Li, Nancy F. Chen, Shuicheng Yan, Xulei Yang, Xun Xu  
-The International Conference on Learning Representations (ICLR), 2026  
-[**arXiv**](https://arxiv.org/abs/2510.01954) | [**Code**](https://github.com/Gorilla-Lab-SCUT/PaDT.git)
+## Foundational Vision Models
 
-- We propose Patch-as-Decodable Token (PaDT), a unified multimodal paradigm that uses Visual Reference Tokens to let MLLMs directly generate diverse dense visual predictions, achieving strong performance across multiple perception tasks.
-
-</div>
-</div>
-
-<!-- 2. WeSAM (CVPR 2024) -->
+<!-- 1. WeSAM (CVPR 2024) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">CVPR 2024</div><img src="images/wesam.webp" alt="wesam" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
@@ -61,7 +52,7 @@ IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024
 </div>
 </div>
 
-<!-- 3. WeSAM++ (TPAMI under review) -->
+<!-- 2. WeSAM++ (TPAMI under review) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">TPAMI Under Review</div><img src="images/wesampp.webp" alt="wesampp" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
@@ -75,7 +66,9 @@ Under review at IEEE TPAMI 2025
 </div>
 </div>
 
-<!-- 4. LetsTalk (IEEE TMM) -->
+## Generative Models
+
+<!-- 3. LetsTalk (IEEE TMM) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">TMM 2026</div><img src="images/letstalk.webp" alt="letstalk" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
@@ -89,7 +82,7 @@ IEEE Transactions on Multimedia (TMM), 2026
 </div>
 </div>
 
-<!-- 5. MuSS (ACM MM 2026 under review) -->
+<!-- 4. MuSS (ACM MM 2026 under review) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">ACM MM 2026 Under Review</div><img src="images/MuSS.jpg" alt="muss" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
@@ -98,6 +91,22 @@ IEEE Transactions on Multimedia (TMM), 2026
 Under review at ACM Multimedia (ACM MM), 2026
 
 - We introduce MuSS, a large-scale cinematic multi-shot dataset and benchmark for subject-to-video generation, designed to evaluate narrative coherence, cross-shot identity consistency, and visual storytelling quality.
+
+</div>
+</div>
+
+## Multimodal Large Language Models
+
+<!-- 5. PaDT (ICLR 2026) -->
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ICLR 2026</div><img src="images/padt.webp" alt="padt" width="100%"></div></div>
+<div class="paper-box-text" markdown="1">
+
+**Patch-as-Decodable-Token: Towards Unified Multi-Modal Vision Tasks in MLLMs**  
+Yongyi Su\*, **Haojie Zhang\***, Shijie Li, Nanqing Liu, Jingyi Liao, Junyi Pan, Yuan Liu, Xiaofen Xing, Chong Sun, Chen Li, Nancy F. Chen, Shuicheng Yan, Xulei Yang, Xun Xu  
+The International Conference on Learning Representations (ICLR), 2026  
+[**arXiv**](https://arxiv.org/abs/2510.01954) | [**Code**](https://github.com/Gorilla-Lab-SCUT/PaDT.git)
+
+- We propose Patch-as-Decodable Token (PaDT), a unified multimodal paradigm that uses Visual Reference Tokens to let MLLMs directly generate diverse dense visual predictions, achieving strong performance across multiple perception tasks.
 
 </div>
 </div>
