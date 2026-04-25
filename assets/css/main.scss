@@ -180,23 +180,22 @@ h6 {
 }
 
 .hero-flow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.15rem;
-    padding: 4.75rem 1.5rem 3.25rem;
-    text-align: center;
+    display: grid;
+    gap: 1rem;
+    padding: 3.5rem 0 2.75rem;
+    text-align: left;
     border-bottom: 1px solid var(--line-soft);
     background: transparent;
 }
 
-.hero-flow__orb {
-    display: none;
+.hero-flow__top {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .hero-flow__avatar-wrap {
-    padding: 0.3rem;
-    border-radius: 999px;
+    padding: 0.28rem;
+    border-radius: 1.5rem;
     background: #fff;
     border: 1px solid var(--line-soft);
     box-shadow: none;
@@ -204,10 +203,10 @@ h6 {
 
 .hero-flow__avatar {
     display: block;
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 5.5rem;
+    height: 6.6rem;
     object-fit: cover;
-    border-radius: 999px;
+    border-radius: 1.25rem;
     border: 0;
 }
 
@@ -223,24 +222,24 @@ h6 {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: clamp(2.8rem, 7vw, 5rem);
-    letter-spacing: -0.04em;
-    line-height: 0.92;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.03em;
+    line-height: 1;
     font-weight: 600;
 }
 
 .hero-flow__subtitle {
-    max-width: 38rem;
+    max-width: 34rem;
     margin: 0;
-    font-size: 1.02rem;
-    line-height: 1.9;
+    font-size: 0.98rem;
+    line-height: 1.8;
 }
 
 .hero-flow__actions,
 .hero-flow__meta {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.85rem;
 }
 
@@ -264,9 +263,9 @@ h6 {
 }
 
 .hero-flow__meta span {
-    padding: 0.25rem 0.8rem;
+    padding: 0 0.8rem;
     color: var(--text-muted);
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     border-left: 1px solid var(--line-soft);
 }
 
@@ -449,12 +448,19 @@ hr {
 
 @include breakpoint(max-width $medium) {
     .hero-flow {
-        padding: 3.5rem 1.15rem 2.6rem;
+        padding: 2.75rem 0 2.25rem;
+        text-align: center;
+    }
+
+    .hero-flow__top,
+    .hero-flow__actions,
+    .hero-flow__meta {
+        justify-content: center;
     }
 
     .hero-flow__avatar {
-        width: 6.5rem;
-        height: 6.5rem;
+        width: 5rem;
+        height: 6rem;
     }
 
     .hero-flow__meta span {

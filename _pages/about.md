@@ -19,10 +19,10 @@ redirect_from:
 <span class="anchor" id="about-me"></span>
 
 <section class="hero-flow">
-  <div class="hero-flow__orb hero-flow__orb--left"></div>
-  <div class="hero-flow__orb hero-flow__orb--right"></div>
-  <div class="hero-flow__avatar-wrap">
-    <img class="hero-flow__avatar" src="images/zhang.haojie.jpg" alt="Haojie Zhang portrait">
+  <div class="hero-flow__top">
+    <div class="hero-flow__avatar-wrap">
+      <img class="hero-flow__avatar" src="images/zhang.haojie.jpg" alt="Haojie Zhang portrait">
+    </div>
   </div>
   <p class="hero-flow__eyebrow">Multimodal AI · Generative Models · Computer Vision</p>
   <h1 class="hero-flow__title">Haojie Zhang</h1>
