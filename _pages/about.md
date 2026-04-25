@@ -2,7 +2,7 @@
 permalink: /
 title: ""
 excerpt: ""
-author_profile: true
+author_profile: false
 show_masthead: false
 redirect_from: 
   - /about/
@@ -18,23 +18,80 @@ redirect_from:
 
 <span class="anchor" id="about-me"></span>
 
-I am currently an M.Sc. student in Information and Communication Engineering at [South China University of Technology (SCUT)](https://www.scut.edu.cn/en/), advised by Prof. [Kui Jia](http://kuijia.site/) and Dr. [Xun Xu](https://alex-xun-xu.github.io/). I previously received my B.Eng. in Information Engineering (Innovation Class) from SCUT with distinction in 2023. From April 2024 to November 2024, I was a visiting student at the Department of Automation, Tsinghua University, where I worked with Prof. Jianhua Tao.
+<section class="hero-flow">
+  <div class="hero-flow__orb hero-flow__orb--left"></div>
+  <div class="hero-flow__orb hero-flow__orb--right"></div>
+  <div class="hero-flow__avatar-wrap">
+    <img class="hero-flow__avatar" src="images/zhang.haojie.jpg" alt="Haojie Zhang portrait">
+  </div>
+  <p class="hero-flow__eyebrow">Multimodal AI · Generative Models · Computer Vision</p>
+  <h1 class="hero-flow__title">Haojie Zhang</h1>
+  <p class="hero-flow__subtitle">
+    M.Sc. student at <a href="https://www.scut.edu.cn/en/">South China University of Technology</a>,
+    focused on building intelligent systems that can perceive, understand, and create.
+  </p>
+  <div class="hero-flow__actions">
+    <a class="hero-chip" href="mailto:eehaojiezhang@gmail.com">Email</a>
+    <a class="hero-chip" href="https://scholar.google.com/citations?pli=1&authuser=1&user=waixiQgAAAAJ">Google Scholar</a>
+    <a class="hero-chip" href="https://github.com/zhang-haojie">GitHub</a>
+  </div>
+  <div class="hero-flow__meta">
+    <span>Guangzhou, China</span>
+    <span>SCUT</span>
+    <span>Open to collaborations</span>
+  </div>
+</section>
 
-My long-term research goal is to bridge perception, understanding, and imagination in intelligent systems, enabling machines to see, comprehend, and create more like humans. My recent work spans **generative models**, **multimodal large language models**, and **foundational vision models**, with projects on talking video synthesis, unified multimodal vision tasks, segmentation foundation model adaptation, and multimodal evaluation benchmarks.
+<section class="flow-section" markdown="1">
+  <div class="section-heading">
+    <span class="section-heading__index">01</span>
+    <div>
+      <h2>About</h2>
+      <p>Researcher working across generative modeling, multimodal large language models, and foundational vision systems.</p>
+    </div>
+  </div>
 
-**Research Interests:**  
-- Generative Models: diffusion models, controllable video generation, talking head synthesis, image editing
-- Multimodal Large Language Models: unified multimodal vision tasks, dense prediction with MLLMs, multimodal evaluation
-- Foundational Vision Models: segmentation foundation models, domain adaptation, semantic perception
+  <div class="glass-panel intro-panel">
+    <p>
+      I am currently an M.Sc. student in Information and Communication Engineering at
+      <a href="https://www.scut.edu.cn/en/">South China University of Technology (SCUT)</a>, advised by
+      Prof. <a href="http://kuijia.site/">Kui Jia</a> and Dr.
+      <a href="https://alex-xun-xu.github.io/">Xun Xu</a>. I previously received my B.Eng. in Information
+      Engineering (Innovation Class) from SCUT with distinction in 2023. From April 2024 to November 2024,
+      I was a visiting student at the Department of Automation, Tsinghua University, where I worked with
+      Prof. Jianhua Tao.
+    </p>
+    <p>
+      My long-term goal is to bridge perception, understanding, and imagination in intelligent systems.
+      Recent work includes talking video synthesis, unified multimodal vision tasks, segmentation foundation
+      model adaptation, and multimodal evaluation benchmarks.
+    </p>
+  </div>
 
-I am always open to research discussions, collaborations, and internship or full-time opportunities related to multimodal AI, generative modeling, and computer vision.
+  <div class="interest-grid">
+    <div class="glass-panel interest-card">
+      <h3>Generative Models</h3>
+      <p>Diffusion models, controllable video generation, talking head synthesis, image editing.</p>
+    </div>
+    <div class="glass-panel interest-card">
+      <h3>Multimodal LLMs</h3>
+      <p>Unified multimodal vision tasks, dense prediction with MLLMs, multimodal evaluation.</p>
+    </div>
+    <div class="glass-panel interest-card">
+      <h3>Foundational Vision</h3>
+      <p>Segmentation foundation models, domain adaptation, semantic perception.</p>
+    </div>
+  </div>
+</section>
 
-<!-- > <span style="color:red;"><i><b>News:</b> I am actively seeking job opportunities related to <b>multimodal large models</b> or <b>generative models</b>. If you have any relevant positions or collaborations, please feel free to contact me!</i></span> -->
-
-
-# 📝 Selected Publications
-
-Grouped by research category and ordered to match my CV.
+<section class="flow-section" markdown="1">
+  <div class="section-heading">
+    <span class="section-heading__index">02</span>
+    <div>
+      <h2>Selected Publications</h2>
+      <p>Grouped by research direction and ordered to match my CV.</p>
+    </div>
+  </div>
 
 ## Foundational Vision Models
 
@@ -124,8 +181,16 @@ Under review at ACM Multimedia (ACM MM), 2026
 </div>
 </div>
 
+</section>
 
-# 🎓 Education
+<section class="flow-section" markdown="1">
+  <div class="section-heading">
+    <span class="section-heading__index">03</span>
+    <div>
+      <h2>Education</h2>
+      <p>Academic trajectory across SCUT and Tsinghua University.</p>
+    </div>
+  </div>
 
 - *2024.04 - 2024.11*, Visiting Student, Department of Automation, Tsinghua University, Beijing  
   Advised by Prof. Jianhua Tao.
@@ -135,18 +200,33 @@ Under review at ACM Multimedia (ACM MM), 2026
 
 - *2019.09 - 2023.06*, B.Eng. in Information Engineering (Innovation Class), South China University of Technology, Guangzhou  
   Graduated with distinction, GPA 3.64/4.0, weighted average 86.1/100.
+</section>
 
-
-# 💼 Internship Experience
+<section class="flow-section" markdown="1">
+  <div class="section-heading">
+    <span class="section-heading__index">04</span>
+    <div>
+      <h2>Internship Experience</h2>
+      <p>Industry experience spanning video generation, vision systems, and multimodal applications.</p>
+    </div>
+  </div>
 
 - *2025.10 - 2026.03*, Tencent Technology and Engineering Group, Hunyuan Team, Shenzhen
 - *2025.04 - 2025.10*, Tencent WeChat Business Group, WeChat Vision, Shenzhen
 - *2024.12 - 2025.03*, Tencent Interactive Entertainment Group, LIGHTSPEED, Shenzhen
+</section>
 
-
-# 🏅 Honors
+<section class="flow-section" markdown="1">
+  <div class="section-heading">
+    <span class="section-heading__index">05</span>
+    <div>
+      <h2>Honors</h2>
+      <p>Selected awards and academic recognitions.</p>
+    </div>
+  </div>
 
 - First Prize, Guangdong Undergraduate Mathematical Contest in Modeling, 2021
 - National Encouragement Scholarship
 - Second Prize Scholarship
 - Merit Student and Excellent Student Cadre
+</section>
