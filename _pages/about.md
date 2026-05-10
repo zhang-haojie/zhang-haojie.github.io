@@ -139,13 +139,14 @@ IEEE Transactions on Multimedia (TMM), 2026
 </div>
 </div>
 
-<!-- 4. MuSS (ACM MM 2026 under review) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ACM MM 2026 Under Review</div><img src="images/MuSS.jpg" alt="muss" width="100%"></div></div>
+<!-- 4. MuSS (under review) -->
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">Under Review</div><img src="images/MuSS.jpg" alt="muss" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **MuSS: A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation**  
 **Haojie Zhang**, Di Wu, Bingyan Liu, Linjie Zhong, Yuancheng Wei, Xingsong Ye, Nanqing Liu  
-Under review at ACM Multimedia (ACM MM), 2026
+Under review  
+[**arXiv**](https://arxiv.org/abs/2604.23789) | [**Code**](https://github.com/zhang-haojie/MuSS)
 
 - We introduce MuSS, a large-scale cinematic multi-shot dataset and benchmark for subject-to-video generation, designed to evaluate narrative coherence, cross-shot identity consistency, and visual storytelling quality.
 
@@ -168,13 +169,14 @@ The International Conference on Learning Representations (ICLR), 2026
 </div>
 </div>
 
-<!-- 6. DiffCap-Bench (ACM MM 2026 under review) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ACM MM 2026 Under Review</div><img src="images/DiffCap.jpg" alt="diffcap" width="100%"></div></div>
+<!-- 6. DiffCap-Bench (under review) -->
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">Under Review</div><img src="images/DiffCap.jpg" alt="diffcap" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **DiffCap-Bench: A Comprehensive, Challenging, Robust Benchmark for Image Difference Captioning**  
 Yuancheng Wei\*, **Haojie Zhang\***, Linli Yao, Lei Li, Jiali Chen, Tao Huang, Yiting Lu, Duojun Huang, Xin Li, Zhao Zhong  
-Under review at ACM Multimedia (ACM MM), 2026
+Under review  
+[**arXiv**](https://arxiv.org/abs/2605.04503) | [**Code**](https://github.com/wyclike/DiffCap-Bench)
 
 - We introduce DiffCap-Bench, a challenging benchmark for image difference captioning, together with an LLM-as-a-Judge evaluation protocol that aligns well with human judgment and supports downstream image editing data construction.
 
