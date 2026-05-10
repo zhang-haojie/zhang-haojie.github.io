@@ -217,18 +217,3 @@ Under review
 - *2025.04 - 2025.10*, Tencent WeChat Business Group, WeChat Vision, Shenzhen
 - *2024.12 - 2025.03*, Tencent Interactive Entertainment Group, LIGHTSPEED, Shenzhen
 </section>
-
-<section class="flow-section" markdown="1">
-  <div class="section-heading">
-    <span class="section-heading__index">05</span>
-    <div>
-      <h2>Honors</h2>
-      <p>Selected awards and academic recognitions.</p>
-    </div>
-  </div>
-
-- First Prize, Guangdong Undergraduate Mathematical Contest in Modeling, 2021
-- National Encouragement Scholarship
-- Second Prize Scholarship
-- Merit Student and Excellent Student Cadre
-</section>
