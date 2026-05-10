@@ -28,7 +28,7 @@ redirect_from:
   <h1 class="hero-flow__title">Haojie Zhang</h1>
   <p class="hero-flow__subtitle">
     M.Sc. student at <a href="https://www.scut.edu.cn/en/">South China University of Technology</a>,
-    focused on building intelligent systems that can perceive, understand, and create.
+    working on generative models, multimodal intelligence, and foundation vision systems.
   </p>
   <div class="hero-flow__actions">
     <a class="hero-chip" href="mailto:eehaojiezhang@gmail.com">Email</a>
@@ -47,7 +47,7 @@ redirect_from:
     <span class="section-heading__index">01</span>
     <div>
       <h2>About</h2>
-      <p>Researcher working across generative modeling, multimodal large language models, and foundational vision systems.</p>
+      <p>Research across generation, multimodal reasoning, and foundation vision models.</p>
     </div>
   </div>
 
@@ -89,7 +89,7 @@ redirect_from:
     <span class="section-heading__index">02</span>
     <div>
       <h2>Selected Publications</h2>
-      <p>Grouped by research direction and ordered to match my CV.</p>
+      <p>Selected work across vision foundation models, generative video, and multimodal evaluation.</p>
     </div>
   </div>
 

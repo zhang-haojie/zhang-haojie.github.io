@@ -109,18 +109,18 @@ h1:before, .anchor:before {
 }
 
 :root {
-    --bg-primary: #ffffff;
-    --bg-secondary: #fafafa;
+    --bg-primary: #fbfbfa;
+    --bg-secondary: #f5f5f3;
     --bg-card: #ffffff;
-    --bg-card-strong: #fcfcfc;
-    --line-soft: rgba(17, 24, 39, 0.08);
-    --line-strong: rgba(17, 24, 39, 0.16);
-    --text-primary: #101418;
-    --text-secondary: rgba(16, 20, 24, 0.72);
-    --text-muted: rgba(16, 20, 24, 0.46);
-    --accent: #111827;
-    --accent-strong: #000000;
-    --shadow-glow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    --bg-card-strong: #fdfdfc;
+    --line-soft: rgba(29, 29, 31, 0.09);
+    --line-strong: rgba(29, 29, 31, 0.18);
+    --text-primary: #1d1d1f;
+    --text-secondary: #515154;
+    --text-muted: #86868b;
+    --accent: #0066cc;
+    --accent-strong: #004999;
+    --shadow-soft: 0 1px 2px rgba(29, 29, 31, 0.03);
 }
 
 html {
@@ -129,7 +129,7 @@ html {
 
 body {
     color: var(--text-primary);
-    background: linear-gradient(180deg, #ffffff 0%, #fbfbfb 100%);
+    background: var(--bg-primary);
 }
 
 body,
@@ -137,7 +137,7 @@ button,
 input,
 select,
 textarea {
-    font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
 }
 
 a {
@@ -170,19 +170,19 @@ h6 {
 #main {
     position: relative;
     z-index: 1;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
 }
 
 .page__content {
     display: grid;
-    gap: 2rem;
+    gap: 4.5rem;
 }
 
 .hero-flow {
     display: grid;
-    gap: 1rem;
-    padding: 3.5rem 0 2.75rem;
+    gap: 1.1rem;
+    padding: 4.75rem 0 4.25rem;
     text-align: left;
     border-bottom: 1px solid var(--line-soft);
     background: transparent;
@@ -194,27 +194,28 @@ h6 {
 }
 
 .hero-flow__avatar-wrap {
-    padding: 0.28rem;
-    border-radius: 1.5rem;
+    padding: 0.25rem;
+    border-radius: 0.85rem;
     background: #fff;
     border: 1px solid var(--line-soft);
-    box-shadow: none;
+    box-shadow: var(--shadow-soft);
 }
 
 .hero-flow__avatar {
     display: block;
-    width: 5.5rem;
-    height: 6.6rem;
+    width: 5rem;
+    height: 5.85rem;
     object-fit: cover;
-    border-radius: 1.25rem;
+    border-radius: 0.65rem;
     border: 0;
 }
 
 .hero-flow__eyebrow {
     margin: 0;
-    letter-spacing: 0.14em;
+    letter-spacing: 0;
     text-transform: uppercase;
-    font-size: 0.72rem;
+    font-size: 0.78rem;
+    font-weight: 600;
     color: var(--text-muted);
 }
 
@@ -222,17 +223,18 @@ h6 {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: clamp(2rem, 4vw, 3rem);
-    letter-spacing: -0.03em;
-    line-height: 1;
+    font-size: clamp(2.8rem, 6vw, 5.1rem);
+    letter-spacing: 0;
+    line-height: 0.98;
     font-weight: 600;
 }
 
 .hero-flow__subtitle {
-    max-width: 34rem;
+    max-width: 42rem;
     margin: 0;
-    font-size: 0.98rem;
-    line-height: 1.8;
+    font-size: 1.18rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
 }
 
 .hero-flow__actions,
@@ -247,19 +249,21 @@ h6 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.72rem 1.05rem;
+    padding: 0.58rem 0.8rem;
     border: 1px solid var(--line-soft);
     border-radius: 999px;
     background: #fff;
-    color: var(--text-secondary);
+    color: var(--accent);
+    font-size: 0.92rem;
+    font-weight: 500;
     text-decoration: none !important;
 }
 
 .hero-chip:hover {
     transform: none;
-    border-color: var(--line-strong);
+    border-color: rgba(0, 102, 204, 0.24);
     background: var(--bg-secondary);
-    color: var(--text-primary);
+    color: var(--accent-strong);
 }
 
 .hero-flow__meta span {
@@ -275,46 +279,52 @@ h6 {
 
 .flow-section {
     display: grid;
-    gap: 1.5rem;
+    gap: 1.75rem;
     padding: 0 0.25rem;
 }
 
 .section-heading {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 1rem;
+    gap: 1.15rem;
     align-items: start;
 }
 
 .section-heading__index {
     min-width: 2.8rem;
-    padding-top: 0.2rem;
+    padding-top: 0.18rem;
     color: var(--text-muted);
-    font-size: 0.86rem;
-    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    letter-spacing: 0;
+    font-weight: 600;
 }
 
 .section-heading h2 {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: clamp(1.55rem, 2.8vw, 2.15rem);
+    letter-spacing: 0;
+    line-height: 1.08;
 }
 
 .section-heading p {
-    margin: 0.35rem 0 0;
+    margin: 0.45rem 0 0;
+    max-width: 42rem;
 }
 
 .flow-section > h2 {
-    margin: 0.25rem 0 0;
-    padding-bottom: 0.75rem;
-    font-size: 1.15rem;
+    margin: 0.4rem 0 0;
+    padding-bottom: 0.65rem;
+    font-size: 1rem;
+    letter-spacing: 0;
+    color: var(--text-muted);
     border-bottom: 1px solid var(--line-soft);
 }
 
 .glass-panel {
-    padding: 1.5rem 1.6rem;
-    border: 1px solid var(--line-soft);
-    border-radius: 1.5rem;
-    background: var(--bg-card);
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
     box-shadow: none;
 }
 
@@ -324,13 +334,19 @@ h6 {
 
 .interest-grid {
     display: grid;
-    gap: 1rem;
+    gap: 0.8rem;
+}
+
+.interest-card {
+    padding: 1rem 0 0 1rem;
+    border-left: 1px solid var(--line-soft);
 }
 
 .interest-card h3 {
     margin-top: 0;
-    margin-bottom: 0.75rem;
-    font-size: 1.05rem;
+    margin-bottom: 0.45rem;
+    font-size: 0.98rem;
+    letter-spacing: 0;
 }
 
 .interest-card p {
@@ -340,12 +356,12 @@ h6 {
 .paper-box {
     justify-content: center;
     align-items: stretch;
-    gap: 1.5rem;
+    gap: 1.35rem;
     border: 1px solid var(--line-soft);
-    border-radius: 1.5rem;
+    border-radius: 8px;
     background: var(--bg-card);
-    box-shadow: none;
-    padding: 1.4rem;
+    box-shadow: var(--shadow-soft);
+    padding: 1rem;
 }
 
 .paper-box .paper-box-image {
@@ -359,10 +375,12 @@ h6 {
 
 .paper-box .paper-box-image img {
     width: 100%;
+    aspect-ratio: 16 / 10;
     max-width: 100%;
-    border-radius: 1rem;
+    border-radius: 6px;
     border: 1px solid var(--line-soft);
     box-shadow: none;
+    object-fit: cover;
 }
 
 .paper-box .paper-box-text {
@@ -372,20 +390,40 @@ h6 {
 
 .paper-box .paper-box-text p,
 .paper-box .paper-box-text li {
-    font-size: 0.98rem;
+    font-size: 0.94rem;
+    line-height: 1.62;
+}
+
+.paper-box .paper-box-text > p:first-child,
+.paper-box .paper-box-text strong {
+    line-height: 1.35;
+}
+
+.paper-box .paper-box-text a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.paper-box .paper-box-text a:hover {
+    color: var(--accent-strong);
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
 }
 
 .badge {
-    margin-top: 0.8rem;
-    margin-left: 0.8rem;
-    padding: 0.45rem 0.85rem;
+    margin-top: 0.55rem;
+    margin-left: 0.55rem;
+    padding: 0.28rem 0.5rem;
     border: 1px solid var(--line-soft);
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.9);
     color: var(--text-secondary);
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+    backdrop-filter: blur(10px);
 }
 
 .page__content h2 {
@@ -407,11 +445,11 @@ h6 {
 
 .flow-section > ul {
     margin: 0;
-    padding: 1.4rem 1.5rem 1.4rem 2.5rem;
+    padding: 1.1rem 1.25rem 1.1rem 2.15rem;
     border: 1px solid var(--line-soft);
-    border-radius: 1.4rem;
+    border-radius: 8px;
     background: var(--bg-card);
-    box-shadow: none;
+    box-shadow: var(--shadow-soft);
 }
 
 .page__content li::marker {
@@ -437,18 +475,18 @@ hr {
     }
 
     .paper-box .paper-box-image {
-        min-width: 15rem;
-        max-width: 17.5rem;
+        min-width: 14rem;
+        max-width: 16rem;
     }
 
     .paper-box .paper-box-text {
-        max-width: calc(100% - 19rem);
+        max-width: calc(100% - 17.5rem);
     }
 }
 
 @include breakpoint(max-width $medium) {
     .hero-flow {
-        padding: 2.75rem 0 2.25rem;
+        padding: 3.25rem 0 3rem;
         text-align: center;
     }
 
@@ -459,8 +497,8 @@ hr {
     }
 
     .hero-flow__avatar {
-        width: 5rem;
-        height: 6rem;
+        width: 4.7rem;
+        height: 5.5rem;
     }
 
     .hero-flow__meta span {
@@ -480,7 +518,12 @@ hr {
 
     .glass-panel,
     .paper-box {
-        padding: 1.2rem;
-        border-radius: 1.2rem;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .glass-panel {
+        padding: 0;
+        border-radius: 0;
     }
 }
