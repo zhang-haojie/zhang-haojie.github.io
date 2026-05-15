@@ -129,7 +129,7 @@ Under review at IEEE TPAMI 2025
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">TMM 2026</div><img src="images/letstalk.webp" alt="letstalk" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
-**Efficient Long-duration Talking Video Synthesis with Linear Diffusion Transformer under Multimodal Guidance**  
+**Multimodal Diffusion Transformer with Memory Bank for Scalable Long-Duration Talking Video Generation**  
 **Haojie Zhang**, Zhihao Liang, Ruibo Fu, Bingyan Liu, Zhengqi Wen, Xuefei Liu, Jianhua Tao, Yaling Liang  
 IEEE Transactions on Multimedia (TMM), 2026  
 [**arXiv**](https://arxiv.org/abs/2411.16748) | [**Code**](https://github.com/zhang-haojie/letstalk)
