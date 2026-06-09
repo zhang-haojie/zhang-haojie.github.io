@@ -146,7 +146,7 @@ IEEE Transactions on Multimedia (TMM), 2026
 **MuSS: A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation**  
 **Haojie Zhang**, Di Wu, Bingyan Liu, Linjie Zhong, Yuancheng Wei, Xingsong Ye, Nanqing Liu  
 Under review  
-[**arXiv**](https://arxiv.org/abs/2604.23789) | [**Code**](https://github.com/zhang-haojie/MuSS)
+[**arXiv**](https://arxiv.org/abs/2604.23789) | [**Project**](https://zhang-haojie.github.io/project-pages/muss.html) | [**Code**](https://github.com/zhang-haojie/MuSS)
 
 - We introduce MuSS, a large-scale cinematic multi-shot dataset and benchmark for subject-to-video generation, designed to evaluate narrative coherence, cross-shot identity consistency, and visual storytelling quality.
 

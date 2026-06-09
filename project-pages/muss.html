@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="MuSS: A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation">
+    <meta name="keywords" content="MuSS, multi-shot video generation, subject-to-video generation, cinematic narrative benchmark, video dataset">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MuSS</title>
+
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script defer src="./js/fontawesome.all.min.js"></script>
+
+    <style>
+        :root {
+            --ink: #202124;
+            --muted: #5f6368;
+            --line: #e3e6ea;
+            --panel: #f7f8fa;
+            --accent: #b24c3d;
+        }
+
+        body {
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #fff;
+        }
+
+        a {
+            color: #2368ad;
+        }
+
+        .hero {
+            background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .publication-title {
+            line-height: 1.16;
+            letter-spacing: 0;
+        }
+
+        .logo {
+            width: min(560px, 82vw);
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .status-line {
+            color: var(--muted);
+            margin-top: 12px;
+            font-size: 1.05rem;
+        }
+
+        .publication-authors {
+            line-height: 1.7;
+        }
+
+        .publication-links {
+            margin-top: 18px;
+        }
+
+        .section {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .section + .section {
+            border-top: 1px solid var(--line);
+        }
+
+        .content p {
+            line-height: 1.65;
+        }
+
+        .media-frame {
+            margin: 20px 0 12px;
+            width: 100%;
+            display: block;
+            border: 1px solid var(--line);
+            background: var(--panel);
+        }
+
+        .media-frame--plain {
+            border: 0;
+            background: transparent;
+        }
+
+        .caption {
+            color: var(--muted);
+            font-size: 0.96rem;
+            line-height: 1.55;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin: 22px 0 8px;
+        }
+
+        .stat {
+            border: 1px solid var(--line);
+            padding: 18px;
+            background: var(--panel);
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 1.35rem;
+            color: var(--accent);
+            margin-bottom: 5px;
+        }
+
+        .track-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+
+        .track-table th,
+        .track-table td {
+            border: 1px solid var(--line);
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .track-table th {
+            background: var(--panel);
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+            align-items: start;
+        }
+
+        pre {
+            background: #f6f8fa;
+            border: 1px solid var(--line);
+            color: #222;
+            white-space: pre-wrap;
+        }
+
+        @media (max-width: 768px) {
+            .stat-grid,
+            .example-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+                <img class="logo" src="assets/muss/muss-logo.png" alt="MuSS logo">
+                <h1 class="title is-1 publication-title">
+                    A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation
+                </h1>
+                <div class="status-line">arXiv 2026</div>
+
+                <div class="is-size-5 publication-authors mt-4">
+                    <span class="author-block"><a href="https://zhang-haojie.github.io/">Haojie Zhang</a>,</span>
+                    <span class="author-block">Di Wu,</span>
+                    <span class="author-block">Bingyan Liu,</span>
+                    <span class="author-block">Linjie Zhong,</span>
+                    <span class="author-block">Yuancheng Wei,</span>
+                    <span class="author-block">Xingsong Ye,</span>
+                    <span class="author-block">Nanqing Liu,</span>
+                    <span class="author-block">Yaling Liang</span>
+                </div>
+
+                <div class="publication-links">
+                    <span class="link-block">
+                        <a href="https://arxiv.org/abs/2604.23789" class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                            <span>Paper</span>
+                        </a>
+                    </span>
+                    <span class="link-block">
+                        <a href="https://github.com/zhang-haojie/MuSS" class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon"><i class="fab fa-github"></i></span>
+                            <span>Code</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="content has-text-justified">
+                <p>
+                    <b>TL;DR:</b> MuSS is a large-scale cinematic dataset and benchmark for multi-shot video generation and Subject-to-Video generation. It targets authentic narrative logic, shot-level text-video alignment, and cross-shot identity preservation beyond isolated single-shot generation.
+                </p>
+            </div>
+            <img class="media-frame media-frame--plain" src="assets/muss/teaser.png" alt="MuSS overview">
+            <p class="caption">
+                MuSS focuses on two complementary settings: Complex Cinematic Narrative for montage, shot transitions, and multi-character storytelling; and Subject-Centric Narrative for preserving the same subject across disjoint shots and viewpoints.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-centered">Abstract</h2>
+            <hr>
+            <div class="content has-text-justified mt-4">
+                <p>
+                    While video foundation models excel at single-shot generation, real-world cinematic storytelling inherently relies on complex multi-shot sequencing. Further progress is constrained by the absence of datasets that address three core challenges: authentic narrative logic, spatiotemporal text-video alignment conflicts, and the copy-paste dilemma prevalent in Subject-to-Video generation. To bridge this gap, we introduce <b>MuSS</b>, a large-scale, dual-track dataset tailored for multi-shot video and Subject-to-Video generation. Sourced from over 3,000 movies, MuSS explicitly supports both complex montage transitions and subject-centric narratives. Alongside the dataset, we propose the Cinematic Narrative Benchmark, featuring a visual-logic-driven paradigm and a novel Anti-Copy-Paste Variance metric to rigorously assess continuous storytelling and 3D structural consistency.
+                </p>
+            </div>
+
+            <div class="stat-grid">
+                <div class="stat">
+                    <strong>3,000+</strong>
+                    movies as cinematic source material
+                </div>
+                <div class="stat">
+                    <strong>30,000+</strong>
+                    professionally captioned multi-shot clips
+                </div>
+                <div class="stat">
+                    <strong>1,000h+</strong>
+                    high-quality video content
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-centered">Dataset</h2>
+            <hr>
+            <img class="media-frame" src="assets/muss/data_statistics.png" alt="MuSS dataset statistics">
+            <p class="caption">
+                MuSS provides large-scale cinematic material with diverse clip durations, caption lengths, visual concepts, and source videos.
+            </p>
+            <img class="media-frame" src="assets/muss/dataset_pipeline.png" alt="MuSS dataset construction pipeline">
+            <p class="caption">
+                The construction pipeline first turns raw cinematic footage into high-quality physical shots with coherent captions, then builds cross-shot Subject-to-Video pairs by sampling reference subjects from disjoint shot contexts.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-centered">Benchmark</h2>
+            <hr>
+            <img class="media-frame" src="assets/muss/benchmark_pipeline.png" alt="Cinematic Narrative Benchmark pipeline">
+            <p class="caption">
+                The Cinematic Narrative Benchmark combines shot boundary parsing, expert perception models, and large multimodal model based visual-logic assessment.
+            </p>
+
+            <table class="track-table">
+                <thead>
+                    <tr>
+                        <th>Track</th>
+                        <th>Evaluation Goal</th>
+                        <th>Metrics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Track 1: Narrative Effectiveness</b></td>
+                        <td>Shot-level alignment, transition precision, scene continuity, and visual logic.</td>
+                        <td>Txt.Align, Trans.Dev, Scene.Con, Con.Gap, Scene.Logic, Casting.Logic, Act.Logic, Spat.Logic</td>
+                    </tr>
+                    <tr>
+                        <td><b>Track 2: Subject Consistency</b></td>
+                        <td>Cross-shot identity preservation, subject grounding, motion strength, and anti-copy-paste behavior.</td>
+                        <td>Subj.Recall, Ref-Sub.Con, Inter-Sub.Con, Act.Str, ACP-Var, CP-Rate</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <img class="media-frame" src="assets/muss/qualitative.png" alt="Qualitative benchmark comparison">
+            <p class="caption">
+                Qualitative benchmark results highlight structural limitations of existing methods and the role of MuSS in improving multi-shot consistency and 3D identity preservation.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-centered">Data Examples</h2>
+            <hr>
+            <div class="example-grid mt-4">
+                <div>
+                    <h3 class="title is-5 has-text-centered">Complex Cinematic Narrative</h3>
+                    <img class="media-frame" src="assets/muss/track1_data.png" alt="Track 1 data examples">
+                    <p class="caption">
+                        Progressive multi-shot captions are aligned to physical shots, capturing shot transitions, scene changes, and multi-character narrative flow.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="title is-5 has-text-centered">Subject-Centric Narrative</h3>
+                    <img class="media-frame" src="assets/muss/track2_data.png" alt="Track 2 data examples">
+                    <p class="caption">
+                        A reference subject is extracted from a disjoint shot, while the target sequence preserves identity across different viewpoints and contexts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{zhang2026muss,
+  title   = {MuSS: A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation},
+  author  = {Zhang, Haojie and Wu, Di and Liu, Bingyan and Zhong, Linjie and Wei, Yuancheng and Ye, Xingsong and Liu, Nanqing and Liang, Yaling},
+  journal = {arXiv preprint arXiv:2604.23789},
+  year    = {2026}
+}</code></pre>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container is-max-desktop">
+            <div class="content has-text-centered">
+                <p>
+                    This webpage uses the local MuSS repository assets and follows the project-page style of this site.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
