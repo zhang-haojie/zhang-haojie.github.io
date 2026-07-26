@@ -228,8 +228,6 @@ Under review at IEEE TPAMI 2025<br>
   </div>
 
 - *2026.04 - Present*, Ant Research Institute (Lingbo Technology), Lingbot-World Team, Hangzhou<br>
-  Working on LingBot-World 2.0 for open-ended interactive world simulation, including causal modeling, few-step generation, real-time inference, small-model pretraining, distillation, and training-pipeline optimization. [**Tech Report**](https://arxiv.org/abs/2607.07534)
-
 - *2025.10 - 2026.04*, Tencent Technology and Engineering Group, Hunyuan Team, Shenzhen
 - *2025.04 - 2025.10*, Tencent WeChat Business Group, WeChat Vision, Shenzhen
 - *2024.12 - 2025.03*, Tencent Interactive Entertainment Group, LIGHTSPEED, Shenzhen
