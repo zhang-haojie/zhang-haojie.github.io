@@ -93,39 +93,23 @@ redirect_from:
     </div>
   </div>
 
-## Foundational Vision Models
+## Video Generation and World Models
 
-<!-- 1. WeSAM (CVPR 2024) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">CVPR 2024</div><img src="images/wesam.webp" alt="wesam" width="100%"></div></div>
+<!-- 1. LingBot-World 2.0 (Technical Report) -->
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">Technical Report 2026</div><img src="https://raw.githubusercontent.com/Robbyant/lingbot-world-v2/main/assets/teaser.png" alt="LingBot-World 2.0" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
-**Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation**  
-**Haojie Zhang**, Yongyi Su, Xun Xu<sup>+</sup>, Kui Jia  
-IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024  
-[**Paper**](https://ieeexplore.ieee.org/document/10657214) | [**arXiv**](http://arxiv.org/abs/2312.03502) | [**Project**](https://zhang-haojie.github.io/project-pages/wesam.html) | [**Code**](https://github.com/zhang-haojie/wesam)
+**Infinite Worlds with Versatile Interactions**<br>
+Zelin Gao, Qiuyu Wang, Jiapeng Zhu, Jingye Chen, Zichen Liu, Qingyan Bai, Jiahao Wang, Yufeng Yuan, Hanlin Wang, Yichong Lu, Ka Leong Cheng, **Haojie Zhang**, Jian Gao, Tianrui Feng, Yuzheng Liu, Yao Yao, Yinghao Xu, Xing Zhu, Yujun Shen, Hao Ouyang<br>
+Technical Report, 2026<br>
+[**arXiv**](https://arxiv.org/abs/2607.07534) | [**Project**](https://technology.robbyant.com/lingbot-world-v2) | [**Code**](https://github.com/Robbyant/lingbot-world-v2)
 
-- We propose WeSAM, a weakly supervised self-training framework with anchor regularization and low-rank adaptation, which enables efficient adaptation of foundation models (e.g., SAM) for diverse image segmentation tasks. WeSAM outperforms SAM and other state-of-the-art methods on five challenging benchmarks.
-
-</div>
-</div>
-
-<!-- 2. WeSAM++ (TPAMI under review) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">TPAMI Under Review</div><img src="images/wesampp.webp" alt="wesampp" width="100%"></div></div>
-<div class="paper-box-text" markdown="1">
-
-**Improving the Generalization of Segmentation Foundation Models via Weakly-Supervised and Unsupervised Adaptation**  
-**Haojie Zhang**, Yongyi Su, Nanqing Liu, Xulei Yang, Xiangyu Yue, Kui Jia, Xun Xu  
-Under review at IEEE TPAMI 2025  
-[**Preprint**](https://www.preprints.org/manuscript/202510.1640) | [**Code**](https://github.com/zhang-haojie/wesam)
-
-- We propose WeSAM++, which introduces patch-level contrastive loss for better feature alignment and incorporates Masked Image Modeling to enhance encoder consistency and robustness. Our method achieves superior generalization on unsupervised adaptation, open-vocabulary segmentation, and SAM2 adaptation.
+- We present LingBot-World 2.0, an interactive video world model with an unbounded interaction horizon, real-time 720p generation at 60 FPS, diverse action and text-driven controls, and an agentic harness for persistent, evolving virtual worlds.
 
 </div>
 </div>
 
-## Generative Models
-
-<!-- 3. LetsTalk (IEEE TMM) -->
+<!-- 2. LetsTalk (IEEE TMM) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">TMM 2026</div><img src="images/letstalk.webp" alt="letstalk" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
@@ -139,13 +123,13 @@ IEEE Transactions on Multimedia (TMM), 2026
 </div>
 </div>
 
-<!-- 4. MuSS (under review) -->
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">Under Review</div><img src="images/MuSS.jpg" alt="muss" width="100%"></div></div>
+<!-- 3. MuSS (ACM MM 2026 Oral) -->
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ACM MM 2026 Oral</div><img src="images/MuSS.jpg" alt="muss" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
 **MuSS: A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation**  
 **Haojie Zhang**, Di Wu, Bingyan Liu, Linjie Zhong, Yuancheng Wei, Xingsong Ye, Nanqing Liu  
-Under review  
+ACM International Conference on Multimedia (ACM MM), 2026 — **Oral Presentation**<br>
 [**arXiv**](https://arxiv.org/abs/2604.23789) | [**Project**](https://zhang-haojie.github.io/project-pages/muss.html) | [**Code**](https://github.com/zhang-haojie/MuSS)
 
 - We introduce MuSS, a large-scale cinematic multi-shot dataset and benchmark for subject-to-video generation, designed to evaluate narrative coherence, cross-shot identity consistency, and visual storytelling quality.
@@ -155,7 +139,7 @@ Under review
 
 ## Multimodal Large Language Models
 
-<!-- 5. PaDT (ICLR 2026) -->
+<!-- 4. PaDT (ICLR 2026) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">ICLR 2026</div><img src="images/padt.webp" alt="padt" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
@@ -169,7 +153,7 @@ The International Conference on Learning Representations (ICLR), 2026
 </div>
 </div>
 
-<!-- 6. DiffCap-Bench (under review) -->
+<!-- 5. DiffCap-Bench (under review) -->
 <div class="paper-box"><div class="paper-box-image"><div><div class="badge">Under Review</div><img src="images/DiffCap.jpg" alt="diffcap" width="100%"></div></div>
 <div class="paper-box-text" markdown="1">
 
@@ -179,6 +163,36 @@ Under review
 [**arXiv**](https://arxiv.org/abs/2605.04503) | [**Code**](https://github.com/wyclike/DiffCap-Bench)
 
 - We introduce DiffCap-Bench, a challenging benchmark for image difference captioning, together with an LLM-as-a-Judge evaluation protocol that aligns well with human judgment and supports downstream image editing data construction.
+
+</div>
+</div>
+
+## Computer Vision
+
+<!-- 6. WeSAM (CVPR 2024) -->
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">CVPR 2024</div><img src="images/wesam.webp" alt="wesam" width="100%"></div></div>
+<div class="paper-box-text" markdown="1">
+
+**Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation**<br>
+**Haojie Zhang**, Yongyi Su, Xun Xu<sup>+</sup>, Kui Jia<br>
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024<br>
+[**Paper**](https://ieeexplore.ieee.org/document/10657214) | [**arXiv**](http://arxiv.org/abs/2312.03502) | [**Project**](https://zhang-haojie.github.io/project-pages/wesam.html) | [**Code**](https://github.com/zhang-haojie/wesam)
+
+- We propose WeSAM, a weakly supervised self-training framework with anchor regularization and low-rank adaptation, which enables efficient adaptation of foundation models (e.g., SAM) for diverse image segmentation tasks. WeSAM outperforms SAM and other state-of-the-art methods on five challenging benchmarks.
+
+</div>
+</div>
+
+<!-- 7. WeSAM++ (TPAMI under review) -->
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">TPAMI Under Review</div><img src="images/wesampp.webp" alt="wesampp" width="100%"></div></div>
+<div class="paper-box-text" markdown="1">
+
+**Improving the Generalization of Segmentation Foundation Models via Weakly-Supervised and Unsupervised Adaptation**<br>
+**Haojie Zhang**, Yongyi Su, Nanqing Liu, Xulei Yang, Xiangyu Yue, Kui Jia, Xun Xu<br>
+Under review at IEEE TPAMI 2025<br>
+[**Preprint**](https://www.preprints.org/manuscript/202510.1640) | [**Code**](https://github.com/zhang-haojie/wesam)
+
+- We propose WeSAM++, which introduces patch-level contrastive loss for better feature alignment and incorporates Masked Image Modeling to enhance encoder consistency and robustness. Our method achieves superior generalization on unsupervised adaptation, open-vocabulary segmentation, and SAM2 adaptation.
 
 </div>
 </div>
@@ -213,7 +227,10 @@ Under review
     </div>
   </div>
 
-- *2025.10 - 2026.03*, Tencent Technology and Engineering Group, Hunyuan Team, Shenzhen
+- *2026.04 - Present*, Ant Research Institute (Lingbo Technology), Lingbot-World Team, Hangzhou<br>
+  Working on LingBot-World 2.0 for open-ended interactive world simulation, including causal modeling, few-step generation, real-time inference, small-model pretraining, distillation, and training-pipeline optimization. [**Tech Report**](https://arxiv.org/abs/2607.07534)
+
+- *2025.10 - 2026.04*, Tencent Technology and Engineering Group, Hunyuan Team, Shenzhen
 - *2025.04 - 2025.10*, Tencent WeChat Business Group, WeChat Vision, Shenzhen
 - *2024.12 - 2025.03*, Tencent Interactive Entertainment Group, LIGHTSPEED, Shenzhen
 </section>
