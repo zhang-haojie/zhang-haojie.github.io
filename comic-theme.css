@@ -153,11 +153,31 @@ a:focus {
 
 .profile-photo {
   width: 228px;
-  border: 2px solid var(--sketch-ink);
-  border-radius: 3px;
-  box-shadow: 4px 4px 0 rgba(146, 159, 126, .58);
-  filter: saturate(.82) contrast(1.02);
-  transform: rotate(.35deg);
+  border: 0;
+  border-radius: 0;
+  background: #f8f4e9;
+  box-shadow: 4px 5px 0 rgba(146, 159, 126, .22);
+  clip-path: polygon(1.5% 1%, 98.5% 2.4%, 97.4% 98.3%, 2.3% 97%);
+  filter: saturate(.78) contrast(1.01);
+  transform: rotate(-.35deg);
+}
+
+.profile-photo-wrap {
+  position: relative;
+  isolation: isolate;
+}
+
+.profile-photo-wrap::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -7px;
+  left: 50%;
+  width: 232px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(76, 80, 72, .34);
+  clip-path: polygon(2% 1%, 99% 3%, 97% 99%, 1% 96%);
+  transform: translateX(-50%) rotate(.65deg);
 }
 
 .profile-location {
@@ -555,6 +575,15 @@ a:focus {
     padding: 30px 21px 32px;
   }
 
+  .profile-photo {
+    width: 184px;
+  }
+
+  .profile-photo-wrap::before {
+    top: -5px;
+    width: 188px;
+  }
+
   .content-section {
     padding: 26px 19px 29px;
   }
@@ -619,8 +648,7 @@ a:focus {
 }
 
 .profile-photo {
-  border-color: rgba(67, 70, 64, .62);
-  box-shadow: 3px 3px 0 rgba(146, 159, 126, .28);
+  box-shadow: 4px 5px 0 rgba(146, 159, 126, .22);
 }
 
 .news-list::before {
