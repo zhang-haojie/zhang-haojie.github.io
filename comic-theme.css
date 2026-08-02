@@ -160,28 +160,19 @@ a:focus {
   clip-path: none;
   filter: saturate(.68) contrast(.98);
   mix-blend-mode: multiply;
-  opacity: .96;
+  opacity: .98;
   transform: none;
-  -webkit-mask-image: radial-gradient(ellipse 72% 78% at 50% 45%, #000 0 64%, rgba(0, 0, 0, .9) 73%, rgba(0, 0, 0, .42) 84%, transparent 100%);
-  mask-image: radial-gradient(ellipse 72% 78% at 50% 45%, #000 0 64%, rgba(0, 0, 0, .9) 73%, rgba(0, 0, 0, .42) 84%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0 86%, rgba(0, 0, 0, .72) 93%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0 86%, rgba(0, 0, 0, .72) 93%, transparent 100%);
 }
 
 .profile-photo-wrap {
   position: relative;
-  isolation: isolate;
+  isolation: auto;
 }
 
 .profile-photo-wrap::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 9px;
-  left: 50%;
-  width: 214px;
-  height: 226px;
-  background: radial-gradient(ellipse at 48% 46%, rgba(146, 159, 126, .14), rgba(146, 159, 126, .055) 48%, transparent 72%);
-  filter: blur(3px);
-  transform: translateX(-50%) rotate(-1.2deg);
+  content: none;
 }
 
 .profile-location {
@@ -581,12 +572,6 @@ a:focus {
 
   .profile-photo {
     width: 184px;
-  }
-
-  .profile-photo-wrap::before {
-    top: 8px;
-    width: 166px;
-    height: 176px;
   }
 
   .content-section {
