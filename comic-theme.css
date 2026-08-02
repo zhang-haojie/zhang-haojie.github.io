@@ -606,7 +606,7 @@ a:focus {
   position: relative;
   overflow: visible;
   border: 0;
-  border-radius: 2px;
+  border-radius: 4px;
   background:
     linear-gradient(112deg, rgba(146, 159, 126, .025), transparent 36%),
     rgba(255, 254, 248, .82);
