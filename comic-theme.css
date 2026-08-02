@@ -1,4 +1,4 @@
-/* Local-only minimalist Western comic sketch experiment. */
+/* Minimalist Western comic sketch theme. */
 :root {
   --sketch-ink: #2b2d29;
   --sketch-muted: #6e7169;
@@ -37,21 +37,6 @@ body {
   font-size: 15px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-}
-
-body::after {
-  content: "LOCAL SKETCH TEST";
-  position: fixed;
-  right: 14px;
-  bottom: 12px;
-  z-index: 90;
-  padding: 4px 7px;
-  border: 1px solid rgba(43, 45, 41, .55);
-  color: #555950;
-  background: rgba(250, 247, 238, .88);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: .08em;
 }
 
 a {
