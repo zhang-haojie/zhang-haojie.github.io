@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Haojie Zhang | Academic Homepage</title>
+  <title>Haojie Zhang | Minimal Comic Sketch Test</title>
   <meta name="author" content="Haojie Zhang">
-  <meta name="description" content="Haojie Zhang is an M.Sc. student at South China University of Technology researching generative models, multimodal intelligence, and foundation vision systems.">
+  <meta name="description" content="Haojie Zhang is a Senior Algorithm Researcher at Alibaba ATH, Token Foundry, working on generative models, multimodal intelligence, and foundation vision systems.">
   <link rel="canonical" href="https://zhang-haojie.github.io/">
   <meta property="og:title" content="Haojie Zhang | Academic Homepage">
-  <meta property="og:description" content="Research in generative models, multimodal intelligence, and foundation vision systems.">
+  <meta property="og:description" content="Senior Algorithm Researcher at Alibaba ATH, Token Foundry, working on generative models, multimodal intelligence, and foundation vision systems.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zhang-haojie.github.io/">
   <meta property="og:image" content="https://zhang-haojie.github.io/images/zhang.haojie.jpg">
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="256x256" href="images/favicon-cartoon.png">
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="comic-theme.css">
 </head>
 <body>
   <div class="sliding-background" aria-hidden="true">
@@ -35,11 +36,13 @@
         <p class="profile-kicker">Generative Models · Multimodal LLMs · Computer Vision</p>
         <h1>Haojie Zhang <span class="name-divider">|</span> 张浩杰</h1>
         <p>
-          I am an M.Sc. student in Information and Communication Engineering at
-          <a href="https://www.scut.edu.cn/en/">South China University of Technology (SCUT)</a>,
+          I am currently a Senior Algorithm Researcher at <strong>Alibaba ATH</strong>, working in
+          <strong>Token Foundry</strong>. I received my M.Sc. in Information and Communication Engineering
+          from <a href="https://www.scut.edu.cn/en/">South China University of Technology (SCUT)</a> in 2026,
           advised by Prof. <a href="http://kuijia.site/">Kui Jia</a> and Dr.
-          <a href="https://alex-xun-xu.github.io/">Xun Xu</a>. I previously visited the Department of
-          Automation at Tsinghua University, where I worked with Prof. Jianhua Tao.
+          <a href="https://alex-xun-xu.github.io/">Xun Xu</a>, and my B.Eng. in Information Engineering from
+          SCUT in 2023. I previously visited the Department of Automation at Tsinghua University, where I
+          worked with Prof. Jianhua Tao.
         </p>
         <p>
           My research explores generative models, multimodal large language models, and foundation vision
@@ -59,8 +62,8 @@
         </p>
       </div>
       <div class="profile-photo-wrap">
-        <img class="profile-photo" src="images/zhang.haojie.jpg" alt="Portrait of Haojie Zhang">
-        <p class="profile-location">Guangzhou, China</p>
+        <img class="profile-photo" src="images/zhang-haojie-sketch-color-transparent.webp" alt="Hand-drawn portrait of Haojie Zhang">
+        <p class="profile-location">Hangzhou, China</p>
       </div>
     </section>
 
@@ -69,26 +72,30 @@
       <ol class="news-list">
         <li class="news-item">
           <span class="news-dot" aria-hidden="true"></span>
+          <div class="news-body"><span class="news-date-badge">Aug. 2026</span><span class="news-text">I joined <strong>Alibaba ATH</strong> as part of <strong>Token Foundry</strong>.</span></div>
+        </li>
+        <li class="news-item">
+          <span class="news-dot" aria-hidden="true"></span>
           <div class="news-body"><span class="news-date-badge">Jul. 2026</span><span class="news-text">The technical report for <strong>LingBot-World 2.0</strong> was released.</span></div>
         </li>
         <li class="news-item">
           <span class="news-dot" aria-hidden="true"></span>
-          <div class="news-body"><span class="news-date-badge">2026</span><span class="news-text"><strong>MuSS</strong> was accepted to ACM MM 2026 as an oral presentation.</span></div>
+          <div class="news-body"><span class="news-date-badge">May 2026</span><span class="news-text"><strong>MuSS</strong> was accepted to ACM MM 2026 as an oral presentation.</span></div>
         </li>
         <li class="news-item">
           <span class="news-dot" aria-hidden="true"></span>
-          <div class="news-body"><span class="news-date-badge">2026</span><span class="news-text"><strong>PaDT</strong> was accepted to ICLR 2026.</span></div>
+          <div class="news-body"><span class="news-date-badge">Apr. 2026</span><span class="news-text"><strong>LetsTalk</strong> was accepted for publication in IEEE Transactions on Multimedia.</span></div>
         </li>
         <li class="news-item">
           <span class="news-dot" aria-hidden="true"></span>
-          <div class="news-body"><span class="news-date-badge">2026</span><span class="news-text"><strong>LetsTalk</strong> was published in IEEE Transactions on Multimedia.</span></div>
+          <div class="news-body"><span class="news-date-badge">Jan. 2026</span><span class="news-text"><strong>PaDT</strong> was accepted to ICLR 2026.</span></div>
         </li>
       </ol>
     </section>
 
     <section id="publications" class="page-section content-section">
       <h2 class="section-title">Selected Publications</h2>
-      <p class="section-note">* Equal contribution. Selected work is grouped by research direction.</p>
+      <p class="section-note">* Equal contribution. Selected work is ordered by recent publication milestones.</p>
       <div class="tag-filter" role="group" aria-label="Filter publications">
         <button class="tag-btn active" type="button" data-filter="all">All <span class="tag-count">7</span></button>
         <button class="tag-btn" type="button" data-filter="generation">Generative Models <span class="tag-count">3</span></button>
@@ -98,11 +105,9 @@
 
       <div class="publication-list">
         <article class="publication-card" data-tags="generation">
-          <div class="publication-media paper-placeholder" role="img" aria-label="LingBot-World 2.0">
-            <span>LingBot-World <b>2.0</b></span>
-          </div>
+          <div class="publication-media"><img src="images/lingbot-world-v2-teaser.webp" alt="LingBot-World 2.0 teaser showing diverse interactive worlds" loading="lazy"></div>
           <div class="publication-copy">
-            <span class="publication-venue">Technical Report · 2026</span>
+            <span class="publication-venue">Technical Report · Jul. 2026</span>
             <h2>Infinite Worlds with Versatile Interactions</h2>
             <p class="publication-authors">Zelin Gao, Qiuyu Wang, Jiapeng Zhu, Jingye Chen, Zichen Liu, et al., <strong>Haojie Zhang</strong>, et al.</p>
             <p>An interactive video world model supporting real-time, persistent, and controllable virtual worlds.</p>
@@ -113,9 +118,9 @@
         <article class="publication-card featured" data-tags="generation">
           <div class="publication-media"><img src="images/MuSS.jpg" alt="MuSS dataset and benchmark" loading="lazy"></div>
           <div class="publication-copy">
-            <span class="publication-venue">ACM MM · Oral · 2026</span>
+            <span class="publication-venue">ACM MM · Oral · May 2026</span>
             <h2>MuSS: A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation</h2>
-            <p class="publication-authors"><strong>Haojie Zhang</strong>, Di Wu, Bingyan Liu, Linjie Zhong, Yuancheng Wei, Xingsong Ye, Nanqing Liu</p>
+            <p class="publication-authors"><strong>Haojie Zhang</strong>, Di Wu, Bingyan Liu, Linjie Zhong, Yuancheng Wei, Xingsong Ye, Nanqing Liu, Yaling Liang</p>
             <p>A large-scale cinematic dataset and benchmark for narrative coherence and identity consistency in multi-shot video generation.</p>
             <p class="publication-links"><a href="https://arxiv.org/abs/2604.23789">arXiv</a><a href="project-pages/muss.html">Project</a><a href="https://github.com/zhang-haojie/MuSS">Code</a></p>
           </div>
@@ -135,7 +140,7 @@
         <article class="publication-card featured" data-tags="generation">
           <div class="publication-media"><img src="images/letstalk.webp" alt="LetsTalk method overview" loading="lazy"></div>
           <div class="publication-copy">
-            <span class="publication-venue">IEEE TMM · 2026</span>
+            <span class="publication-venue">IEEE TMM · Apr. 2026</span>
             <h2>Multimodal Diffusion Transformer with Memory Bank for Scalable Long-Duration Talking Video Generation</h2>
             <p class="publication-authors"><strong>Haojie Zhang</strong>, Zhihao Liang, Ruibo Fu, Bingyan Liu, Zhengqi Wen, Xuefei Liu, Jianhua Tao, Yaling Liang</p>
             <p>LetsTalk combines a diffusion transformer with a memory bank for efficient and consistent long-duration talking video generation.</p>
@@ -146,7 +151,7 @@
         <article class="publication-card featured" data-tags="mllm">
           <div class="publication-media"><img src="images/padt.webp" alt="PaDT framework" loading="lazy"></div>
           <div class="publication-copy">
-            <span class="publication-venue">ICLR · 2026</span>
+            <span class="publication-venue">ICLR · Jan. 2026</span>
             <h2>Patch-as-Decodable-Token: Towards Unified Multi-Modal Vision Tasks in MLLMs</h2>
             <p class="publication-authors">Yongyi Su*, <strong>Haojie Zhang*</strong>, Shijie Li, Nanqing Liu, Jingyi Liao, et al.</p>
             <p>PaDT introduces Visual Reference Tokens that enable multimodal language models to generate diverse dense visual predictions.</p>
@@ -157,9 +162,9 @@
         <article class="publication-card" data-tags="vision">
           <div class="publication-media"><img src="images/wesampp.webp" alt="WeSAM++ framework" loading="lazy"></div>
           <div class="publication-copy">
-            <span class="publication-venue">TPAMI · Under Review · 2025</span>
+            <span class="publication-venue">TPAMI · Under Review · Oct. 2025</span>
             <h2>Improving the Generalization of Segmentation Foundation Models via Weakly-Supervised and Unsupervised Adaptation</h2>
-            <p class="publication-authors"><strong>Haojie Zhang</strong>, Yongyi Su, Nanqing Liu, Xulei Yang, Xiangyu Yue, Kui Jia, Xun Xu</p>
+            <p class="publication-authors"><strong>Haojie Zhang</strong>, Yongyi Su, Nanqing Liu, Shijie Li, Xulei Yang, Xiangyu Yue, Kui Jia, Xun Xu</p>
             <p>WeSAM++ extends foundation-model adaptation with patch-level contrastive learning and masked image modeling.</p>
             <p class="publication-links"><a href="https://www.preprints.org/manuscript/202510.1640">Preprint</a><a href="https://github.com/zhang-haojie/wesam">Code</a></p>
           </div>
@@ -188,7 +193,8 @@
           <article class="timeline-item"><span>2019.09 – 2023.06</span><h3>South China University of Technology</h3><p>B.Eng. in Information Engineering (Innovation Class)<br>Graduated with distinction · GPA 3.64/4.0</p></article>
         </div>
         <div class="experience-column">
-          <h2>Research Internships</h2>
+          <h2>Experience</h2>
+          <article class="timeline-item"><span>2026.08 – Present</span><h3>Alibaba ATH</h3><p>Token Foundry · Hangzhou</p></article>
           <article class="timeline-item"><span>2026.04 – 2026.07</span><h3>Ant Research Institute</h3><p>Lingbot-World Team · Hangzhou</p></article>
           <article class="timeline-item"><span>2025.10 – 2026.04</span><h3>Tencent TEG</h3><p>Hunyuan Team · Shenzhen</p></article>
           <article class="timeline-item"><span>2025.04 – 2025.10</span><h3>Tencent WXG</h3><p>WeChat Vision · Shenzhen</p></article>
