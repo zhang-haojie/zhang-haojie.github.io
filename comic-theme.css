@@ -158,7 +158,7 @@ a:focus {
   background: transparent;
   box-shadow: none;
   clip-path: none;
-  filter: saturate(.68) contrast(.98);
+  filter: saturate(.82) contrast(.98);
   mix-blend-mode: multiply;
   opacity: .98;
   transform: none;
