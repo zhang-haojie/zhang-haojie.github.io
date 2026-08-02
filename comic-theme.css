@@ -185,6 +185,11 @@ a:focus {
   color: #5f6d50;
 }
 
+.contact-links .email-link .contact-sub {
+  line-height: 1.35;
+  padding-bottom: 1px;
+}
+
 .content-section > .section-title {
   position: relative;
   display: inline-block;
@@ -244,11 +249,11 @@ a:focus {
 
 .news-date-badge {
   min-width: 76px;
-  padding: 1px 5px;
-  border: 1px solid #999c93;
-  border-radius: 2px;
+  padding: 1px 0;
+  border: 0;
+  border-radius: 0;
   color: #52574d;
-  background: rgba(255, 255, 255, .58);
+  background: transparent;
   font-size: 11px;
   font-weight: 700;
 }
@@ -653,8 +658,8 @@ a:focus {
 }
 
 .news-date-badge {
-  border-color: rgba(126, 130, 121, .42);
-  background: rgba(255, 255, 252, .38);
+  border: 0;
+  background: transparent;
 }
 
 .tag-btn {
